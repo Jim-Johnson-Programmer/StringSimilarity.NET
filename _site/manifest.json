@@ -1,0 +1,542 @@
+{
+  "source_base_path": "D:/__Open_Source_Forks/feature23/StringSimilarity.NET",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Cosine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Cosine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Cosine",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Damerau.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Damerau.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Damerau",
+      "Summary": "<p sourcefile=\"api/F23.StringSimilarity.Damerau.yml\" sourcestartlinenumber=\"1\">Implementation of Damerau-Levenshtein distance with transposition (also\nsometimes calls unrestricted Damerau-Levenshtein distance).\nIt is the minimum number of operations needed to transform one string into\nthe other, where an operation is defined as an insertion, deletion, or\nsubstitution of a single character, or a transposition of two adjacent\ncharacters.\nIt does respect triangle inequality, and is thus a metric distance.\nThis is not to be confused with the optimal string alignment distance, which\nis an extension where no substring can be edited more than once.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Experimental.Sift4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Experimental.Sift4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Experimental.Sift4",
+      "Summary": "<p sourcefile=\"api/F23.StringSimilarity.Experimental.Sift4.yml\" sourcestartlinenumber=\"1\">Sift4 - a general purpose string distance algorithm inspired by JaroWinkler\nand Longest Common Subsequence.\nOriginal JavaScript algorithm by siderite, java port by Nathan Fischer 2016.\n<a href=\"https://siderite.dev/blog/super-fast-and-accurate-string-distance.html\" sourcefile=\"api/F23.StringSimilarity.Experimental.Sift4.yml\" sourcestartlinenumber=\"4\">https://siderite.dev/blog/super-fast-and-accurate-string-distance.html</a>\n<a href=\"https://blackdoor.github.io/blog/sift4-java/\" sourcefile=\"api/F23.StringSimilarity.Experimental.Sift4.yml\" sourcestartlinenumber=\"5\">https://blackdoor.github.io/blog/sift4-java/</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Experimental.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Experimental.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Experimental",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.ICharacterInsDel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.ICharacterInsDel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.ICharacterInsDel",
+      "Summary": "<p sourcefile=\"api/F23.StringSimilarity.ICharacterInsDel.yml\" sourcestartlinenumber=\"1\">As an adjunct to <xref href=\"F23.StringSimilarity.ICharacterSubstitution\" data-throw-if-not-resolved=\"false\"></xref>, this interface\nallows you to specify the cost of deletion or insertion of a\ncharacter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.ICharacterSubstitution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.ICharacterSubstitution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.ICharacterSubstitution",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.IMetricSpanDistance",
+      "Summary": "<p sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.yml\" sourcestartlinenumber=\"1\">Span distances that implement this interface are metrics, which means:</p>\n<ul sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.yml\" sourcestartlinenumber=\"2\">\n<li sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.yml\" sourcestartlinenumber=\"2\">d(x, y) ≥ 0     (non-negativity, or separation axiom)</li>\n<li sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.yml\" sourcestartlinenumber=\"3\">d(x, y) = 0   if and only if   x = y     (identity, or coincidence axiom)</li>\n<li sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.yml\" sourcestartlinenumber=\"4\">d(x, y) = d(y, x)     (symmetry)</li>\n<li sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.yml\" sourcestartlinenumber=\"5\">d(x, z) ≤ d(x, y) + d(y, z)     (triangle inequality).</li>\n</ul>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.IMetricStringDistance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.IMetricStringDistance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.IMetricStringDistance",
+      "Summary": "<p sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricStringDistance.yml\" sourcestartlinenumber=\"1\">String distances that implement this interface are metrics, which means:</p>\n<ul sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricStringDistance.yml\" sourcestartlinenumber=\"2\">\n<li sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricStringDistance.yml\" sourcestartlinenumber=\"2\">d(x, y) ≥ 0     (non-negativity, or separation axiom)</li>\n<li sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricStringDistance.yml\" sourcestartlinenumber=\"3\">d(x, y) = 0   if and only if   x = y     (identity, or coincidence axiom)</li>\n<li sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricStringDistance.yml\" sourcestartlinenumber=\"4\">d(x, y) = d(y, x)     (symmetry)</li>\n<li sourcefile=\"api/F23.StringSimilarity.Interfaces.IMetricStringDistance.yml\" sourcestartlinenumber=\"5\">d(x, z) ≤ d(x, y) + d(y, z)     (triangle inequality).</li>\n</ul>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.INormalizedSpanDistance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.INormalizedSpanDistance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.INormalizedSpanDistance",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.INormalizedStringDistance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.INormalizedStringDistance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.INormalizedStringDistance",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.INormalizedStringSimilarity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.INormalizedStringSimilarity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.INormalizedStringSimilarity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.ISpanDistance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.ISpanDistance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.ISpanDistance",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.ISpanSimilarity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.ISpanSimilarity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.ISpanSimilarity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.IStringDistance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.IStringDistance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.IStringDistance",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.IStringSimilarity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.IStringSimilarity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces.IStringSimilarity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Jaccard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Jaccard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Jaccard",
+      "Summary": "<p sourcefile=\"api/F23.StringSimilarity.Jaccard.yml\" sourcestartlinenumber=\"1\">Each input string is converted into a set of n-grams, the Jaccard index is\nthen computed as |V1 inter V2| / |V1 union V2|.\nLike Q-Gram distance, the input strings are first converted into sets of\nn-grams (sequences of n characters, also called k-shingles), but this time\nthe cardinality of each n-gram is not taken into account.\nDistance is computed as 1 - cosine similarity.\nJaccard index is a metric distance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.JaroWinkler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.JaroWinkler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.JaroWinkler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.Levenshtein.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.Levenshtein.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.Levenshtein",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.LongestCommonSubsequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.LongestCommonSubsequence.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.LongestCommonSubsequence",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.MetricLCS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.MetricLCS.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.MetricLCS",
+      "Summary": "<p sourcefile=\"api/F23.StringSimilarity.MetricLCS.yml\" sourcestartlinenumber=\"1\">Distance metric based on Longest Common Subsequence, from the notes &quot;An\nLCS-based string metric&quot; by Daniel Bakkelund.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.NGram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.NGram.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.NGram",
+      "Summary": "<p sourcefile=\"api/F23.StringSimilarity.NGram.yml\" sourcestartlinenumber=\"1\">N-Gram Similarity as defined by Kondrak, &quot;N-Gram Similarity and Distance&quot;,\nString Processing and Information Retrieval, Lecture Notes in Computer\nScience Volume 3772, 2005, pp 115-126.</p>\n<p sourcefile=\"api/F23.StringSimilarity.NGram.yml\" sourcestartlinenumber=\"5\">The algorithm uses affixing with special character '\\n' to increase the\nweight of first characters. The normalization is achieved by dividing the\ntotal similarity score the original length of the longest word.</p>\n<p sourcefile=\"api/F23.StringSimilarity.NGram.yml\" sourcestartlinenumber=\"9\">total similarity score the original length of the longest word.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.NormalizedLevenshtein.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.NormalizedLevenshtein.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.NormalizedLevenshtein",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.OptimalStringAlignment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.OptimalStringAlignment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.OptimalStringAlignment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.QGram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.QGram.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.QGram",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.RatcliffObershelp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.RatcliffObershelp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.RatcliffObershelp",
+      "Summary": "<p sourcefile=\"api/F23.StringSimilarity.RatcliffObershelp.yml\" sourcestartlinenumber=\"1\">Ratcliff/Obershelp pattern recognition</p>\n<p sourcefile=\"api/F23.StringSimilarity.RatcliffObershelp.yml\" sourcestartlinenumber=\"3\">The Ratcliff/Obershelp algorithm computes the similarity of two strings a\nthe doubled number of matching characters divided by the total number of\ncharacters in the two strings.Matching characters are those in the longest\ncommon subsequence plus, recursively, matching characters in the unmatched\nregion on either side of the longest common subsequence.\nThe Ratcliff/Obershelp distance is computed as 1 - Ratcliff/Obershelp\nsimilarity.</p>\n<p sourcefile=\"api/F23.StringSimilarity.RatcliffObershelp.yml\" sourcestartlinenumber=\"11\">Author: Ligi <a href=\"https://github.com/dxpux\" sourcefile=\"api/F23.StringSimilarity.RatcliffObershelp.yml\" sourcestartlinenumber=\"11\">https://github.com/dxpux</a> (as a patch for fuzzystring)\nPorted to java from .net by denmase\nPorted back to .NET by paulirwin to retain compatibility with upstream Java project</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.ShingleBased.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.ShingleBased.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.ShingleBased",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.SorensenDice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.SorensenDice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.SorensenDice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.WeightedLevenshtein.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.WeightedLevenshtein.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity.WeightedLevenshtein",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/F23.StringSimilarity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/F23.StringSimilarity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "F23.StringSimilarity",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

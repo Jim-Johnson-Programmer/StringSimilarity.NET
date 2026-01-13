@@ -1,0 +1,1077 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: F23.StringSimilarity
+  name: F23.StringSimilarity
+  href: api/F23.StringSimilarity.html
+  commentId: N:F23.StringSimilarity
+  fullName: F23.StringSimilarity
+  nameWithType: F23.StringSimilarity
+- uid: F23.StringSimilarity.Cosine
+  name: Cosine
+  href: api/F23.StringSimilarity.Cosine.html
+  commentId: T:F23.StringSimilarity.Cosine
+  fullName: F23.StringSimilarity.Cosine
+  nameWithType: Cosine
+- uid: F23.StringSimilarity.Cosine.#ctor
+  name: Cosine()
+  href: api/F23.StringSimilarity.Cosine.html#F23_StringSimilarity_Cosine__ctor
+  commentId: M:F23.StringSimilarity.Cosine.#ctor
+  name.vb: New()
+  fullName: F23.StringSimilarity.Cosine.Cosine()
+  fullName.vb: F23.StringSimilarity.Cosine.New()
+  nameWithType: Cosine.Cosine()
+  nameWithType.vb: Cosine.New()
+- uid: F23.StringSimilarity.Cosine.#ctor(System.Int32)
+  name: Cosine(int)
+  href: api/F23.StringSimilarity.Cosine.html#F23_StringSimilarity_Cosine__ctor_System_Int32_
+  commentId: M:F23.StringSimilarity.Cosine.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: F23.StringSimilarity.Cosine.Cosine(int)
+  fullName.vb: F23.StringSimilarity.Cosine.New(Integer)
+  nameWithType: Cosine.Cosine(int)
+  nameWithType.vb: Cosine.New(Integer)
+- uid: F23.StringSimilarity.Cosine.#ctor*
+  name: Cosine
+  href: api/F23.StringSimilarity.Cosine.html#F23_StringSimilarity_Cosine__ctor_
+  commentId: Overload:F23.StringSimilarity.Cosine.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: F23.StringSimilarity.Cosine.Cosine
+  fullName.vb: F23.StringSimilarity.Cosine.New
+  nameWithType: Cosine.Cosine
+  nameWithType.vb: Cosine.New
+- uid: F23.StringSimilarity.Cosine.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.Cosine.html#F23_StringSimilarity_Cosine_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Cosine.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.Cosine.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.Cosine.Distance(String, String)
+  nameWithType: Cosine.Distance(string, string)
+  nameWithType.vb: Cosine.Distance(String, String)
+- uid: F23.StringSimilarity.Cosine.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.Cosine.html#F23_StringSimilarity_Cosine_Distance_
+  commentId: Overload:F23.StringSimilarity.Cosine.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Cosine.Distance
+  nameWithType: Cosine.Distance
+- uid: F23.StringSimilarity.Cosine.Similarity(System.Collections.Generic.IDictionary{System.String,System.Int32},System.Collections.Generic.IDictionary{System.String,System.Int32})
+  name: Similarity(IDictionary<string, int>, IDictionary<string, int>)
+  href: api/F23.StringSimilarity.Cosine.html#F23_StringSimilarity_Cosine_Similarity_System_Collections_Generic_IDictionary_System_String_System_Int32__System_Collections_Generic_IDictionary_System_String_System_Int32__
+  commentId: M:F23.StringSimilarity.Cosine.Similarity(System.Collections.Generic.IDictionary{System.String,System.Int32},System.Collections.Generic.IDictionary{System.String,System.Int32})
+  name.vb: Similarity(IDictionary(Of String, Integer), IDictionary(Of String, Integer))
+  fullName: F23.StringSimilarity.Cosine.Similarity(System.Collections.Generic.IDictionary<string, int>, System.Collections.Generic.IDictionary<string, int>)
+  fullName.vb: F23.StringSimilarity.Cosine.Similarity(System.Collections.Generic.IDictionary(Of String, Integer), System.Collections.Generic.IDictionary(Of String, Integer))
+  nameWithType: Cosine.Similarity(IDictionary<string, int>, IDictionary<string, int>)
+  nameWithType.vb: Cosine.Similarity(IDictionary(Of String, Integer), IDictionary(Of String, Integer))
+- uid: F23.StringSimilarity.Cosine.Similarity(System.String,System.String)
+  name: Similarity(string, string)
+  href: api/F23.StringSimilarity.Cosine.html#F23_StringSimilarity_Cosine_Similarity_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Cosine.Similarity(System.String,System.String)
+  name.vb: Similarity(String, String)
+  fullName: F23.StringSimilarity.Cosine.Similarity(string, string)
+  fullName.vb: F23.StringSimilarity.Cosine.Similarity(String, String)
+  nameWithType: Cosine.Similarity(string, string)
+  nameWithType.vb: Cosine.Similarity(String, String)
+- uid: F23.StringSimilarity.Cosine.Similarity*
+  name: Similarity
+  href: api/F23.StringSimilarity.Cosine.html#F23_StringSimilarity_Cosine_Similarity_
+  commentId: Overload:F23.StringSimilarity.Cosine.Similarity
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Cosine.Similarity
+  nameWithType: Cosine.Similarity
+- uid: F23.StringSimilarity.Damerau
+  name: Damerau
+  href: api/F23.StringSimilarity.Damerau.html
+  commentId: T:F23.StringSimilarity.Damerau
+  fullName: F23.StringSimilarity.Damerau
+  nameWithType: Damerau
+- uid: F23.StringSimilarity.Damerau.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.Damerau.html#F23_StringSimilarity_Damerau_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Damerau.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.Damerau.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.Damerau.Distance(String, String)
+  nameWithType: Damerau.Distance(string, string)
+  nameWithType.vb: Damerau.Distance(String, String)
+- uid: F23.StringSimilarity.Damerau.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.Damerau.html#F23_StringSimilarity_Damerau_Distance_
+  commentId: Overload:F23.StringSimilarity.Damerau.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Damerau.Distance
+  nameWithType: Damerau.Distance
+- uid: F23.StringSimilarity.Damerau.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.Damerau.html#F23_StringSimilarity_Damerau_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.Damerau.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.Damerau.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.Damerau.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: Damerau.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: Damerau.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.Experimental
+  name: F23.StringSimilarity.Experimental
+  href: api/F23.StringSimilarity.Experimental.html
+  commentId: N:F23.StringSimilarity.Experimental
+  fullName: F23.StringSimilarity.Experimental
+  nameWithType: F23.StringSimilarity.Experimental
+- uid: F23.StringSimilarity.Experimental.Sift4
+  name: Sift4
+  href: api/F23.StringSimilarity.Experimental.Sift4.html
+  commentId: T:F23.StringSimilarity.Experimental.Sift4
+  fullName: F23.StringSimilarity.Experimental.Sift4
+  nameWithType: Sift4
+- uid: F23.StringSimilarity.Experimental.Sift4.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.Experimental.Sift4.html#F23_StringSimilarity_Experimental_Sift4_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Experimental.Sift4.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.Experimental.Sift4.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.Experimental.Sift4.Distance(String, String)
+  nameWithType: Sift4.Distance(string, string)
+  nameWithType.vb: Sift4.Distance(String, String)
+- uid: F23.StringSimilarity.Experimental.Sift4.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.Experimental.Sift4.html#F23_StringSimilarity_Experimental_Sift4_Distance_
+  commentId: Overload:F23.StringSimilarity.Experimental.Sift4.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Experimental.Sift4.Distance
+  nameWithType: Sift4.Distance
+- uid: F23.StringSimilarity.Experimental.Sift4.MaxOffset
+  name: MaxOffset
+  href: api/F23.StringSimilarity.Experimental.Sift4.html#F23_StringSimilarity_Experimental_Sift4_MaxOffset
+  commentId: P:F23.StringSimilarity.Experimental.Sift4.MaxOffset
+  fullName: F23.StringSimilarity.Experimental.Sift4.MaxOffset
+  nameWithType: Sift4.MaxOffset
+- uid: F23.StringSimilarity.Experimental.Sift4.MaxOffset*
+  name: MaxOffset
+  href: api/F23.StringSimilarity.Experimental.Sift4.html#F23_StringSimilarity_Experimental_Sift4_MaxOffset_
+  commentId: Overload:F23.StringSimilarity.Experimental.Sift4.MaxOffset
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Experimental.Sift4.MaxOffset
+  nameWithType: Sift4.MaxOffset
+- uid: F23.StringSimilarity.ICharacterInsDel
+  name: ICharacterInsDel
+  href: api/F23.StringSimilarity.ICharacterInsDel.html
+  commentId: T:F23.StringSimilarity.ICharacterInsDel
+  fullName: F23.StringSimilarity.ICharacterInsDel
+  nameWithType: ICharacterInsDel
+- uid: F23.StringSimilarity.ICharacterInsDel.DeletionCost(System.Char)
+  name: DeletionCost(char)
+  href: api/F23.StringSimilarity.ICharacterInsDel.html#F23_StringSimilarity_ICharacterInsDel_DeletionCost_System_Char_
+  commentId: M:F23.StringSimilarity.ICharacterInsDel.DeletionCost(System.Char)
+  name.vb: DeletionCost(Char)
+  fullName: F23.StringSimilarity.ICharacterInsDel.DeletionCost(char)
+  fullName.vb: F23.StringSimilarity.ICharacterInsDel.DeletionCost(Char)
+  nameWithType: ICharacterInsDel.DeletionCost(char)
+  nameWithType.vb: ICharacterInsDel.DeletionCost(Char)
+- uid: F23.StringSimilarity.ICharacterInsDel.DeletionCost*
+  name: DeletionCost
+  href: api/F23.StringSimilarity.ICharacterInsDel.html#F23_StringSimilarity_ICharacterInsDel_DeletionCost_
+  commentId: Overload:F23.StringSimilarity.ICharacterInsDel.DeletionCost
+  isSpec: "True"
+  fullName: F23.StringSimilarity.ICharacterInsDel.DeletionCost
+  nameWithType: ICharacterInsDel.DeletionCost
+- uid: F23.StringSimilarity.ICharacterInsDel.InsertionCost(System.Char)
+  name: InsertionCost(char)
+  href: api/F23.StringSimilarity.ICharacterInsDel.html#F23_StringSimilarity_ICharacterInsDel_InsertionCost_System_Char_
+  commentId: M:F23.StringSimilarity.ICharacterInsDel.InsertionCost(System.Char)
+  name.vb: InsertionCost(Char)
+  fullName: F23.StringSimilarity.ICharacterInsDel.InsertionCost(char)
+  fullName.vb: F23.StringSimilarity.ICharacterInsDel.InsertionCost(Char)
+  nameWithType: ICharacterInsDel.InsertionCost(char)
+  nameWithType.vb: ICharacterInsDel.InsertionCost(Char)
+- uid: F23.StringSimilarity.ICharacterInsDel.InsertionCost*
+  name: InsertionCost
+  href: api/F23.StringSimilarity.ICharacterInsDel.html#F23_StringSimilarity_ICharacterInsDel_InsertionCost_
+  commentId: Overload:F23.StringSimilarity.ICharacterInsDel.InsertionCost
+  isSpec: "True"
+  fullName: F23.StringSimilarity.ICharacterInsDel.InsertionCost
+  nameWithType: ICharacterInsDel.InsertionCost
+- uid: F23.StringSimilarity.ICharacterSubstitution
+  name: ICharacterSubstitution
+  href: api/F23.StringSimilarity.ICharacterSubstitution.html
+  commentId: T:F23.StringSimilarity.ICharacterSubstitution
+  fullName: F23.StringSimilarity.ICharacterSubstitution
+  nameWithType: ICharacterSubstitution
+- uid: F23.StringSimilarity.ICharacterSubstitution.Cost(System.Char,System.Char)
+  name: Cost(char, char)
+  href: api/F23.StringSimilarity.ICharacterSubstitution.html#F23_StringSimilarity_ICharacterSubstitution_Cost_System_Char_System_Char_
+  commentId: M:F23.StringSimilarity.ICharacterSubstitution.Cost(System.Char,System.Char)
+  name.vb: Cost(Char, Char)
+  fullName: F23.StringSimilarity.ICharacterSubstitution.Cost(char, char)
+  fullName.vb: F23.StringSimilarity.ICharacterSubstitution.Cost(Char, Char)
+  nameWithType: ICharacterSubstitution.Cost(char, char)
+  nameWithType.vb: ICharacterSubstitution.Cost(Char, Char)
+- uid: F23.StringSimilarity.ICharacterSubstitution.Cost*
+  name: Cost
+  href: api/F23.StringSimilarity.ICharacterSubstitution.html#F23_StringSimilarity_ICharacterSubstitution_Cost_
+  commentId: Overload:F23.StringSimilarity.ICharacterSubstitution.Cost
+  isSpec: "True"
+  fullName: F23.StringSimilarity.ICharacterSubstitution.Cost
+  nameWithType: ICharacterSubstitution.Cost
+- uid: F23.StringSimilarity.Interfaces
+  name: F23.StringSimilarity.Interfaces
+  href: api/F23.StringSimilarity.Interfaces.html
+  commentId: N:F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+- uid: F23.StringSimilarity.Interfaces.IMetricSpanDistance
+  name: IMetricSpanDistance
+  href: api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.html
+  commentId: T:F23.StringSimilarity.Interfaces.IMetricSpanDistance
+  fullName: F23.StringSimilarity.Interfaces.IMetricSpanDistance
+  nameWithType: IMetricSpanDistance
+- uid: F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.html#F23_StringSimilarity_Interfaces_IMetricSpanDistance_Distance_
+  commentId: Overload:F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance
+  nameWithType: IMetricSpanDistance.Distance
+- uid: F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.Interfaces.IMetricSpanDistance.html#F23_StringSimilarity_Interfaces_IMetricSpanDistance_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: IMetricSpanDistance.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: IMetricSpanDistance.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.Interfaces.IMetricStringDistance
+  name: IMetricStringDistance
+  href: api/F23.StringSimilarity.Interfaces.IMetricStringDistance.html
+  commentId: T:F23.StringSimilarity.Interfaces.IMetricStringDistance
+  fullName: F23.StringSimilarity.Interfaces.IMetricStringDistance
+  nameWithType: IMetricStringDistance
+- uid: F23.StringSimilarity.Interfaces.IMetricStringDistance.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.Interfaces.IMetricStringDistance.html#F23_StringSimilarity_Interfaces_IMetricStringDistance_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Interfaces.IMetricStringDistance.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.Interfaces.IMetricStringDistance.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.Interfaces.IMetricStringDistance.Distance(String, String)
+  nameWithType: IMetricStringDistance.Distance(string, string)
+  nameWithType.vb: IMetricStringDistance.Distance(String, String)
+- uid: F23.StringSimilarity.Interfaces.IMetricStringDistance.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.Interfaces.IMetricStringDistance.html#F23_StringSimilarity_Interfaces_IMetricStringDistance_Distance_
+  commentId: Overload:F23.StringSimilarity.Interfaces.IMetricStringDistance.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Interfaces.IMetricStringDistance.Distance
+  nameWithType: IMetricStringDistance.Distance
+- uid: F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+  name: INormalizedSpanDistance
+  href: api/F23.StringSimilarity.Interfaces.INormalizedSpanDistance.html
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+  fullName: F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+  nameWithType: INormalizedSpanDistance
+- uid: F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+  name: INormalizedSpanSimilarity
+  href: api/F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity.html
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+  fullName: F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+  nameWithType: INormalizedSpanSimilarity
+- uid: F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  name: INormalizedStringDistance
+  href: api/F23.StringSimilarity.Interfaces.INormalizedStringDistance.html
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  fullName: F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  nameWithType: INormalizedStringDistance
+- uid: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  name: INormalizedStringSimilarity
+  href: api/F23.StringSimilarity.Interfaces.INormalizedStringSimilarity.html
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  fullName: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  nameWithType: INormalizedStringSimilarity
+- uid: F23.StringSimilarity.Interfaces.ISpanDistance
+  name: ISpanDistance
+  href: api/F23.StringSimilarity.Interfaces.ISpanDistance.html
+  commentId: T:F23.StringSimilarity.Interfaces.ISpanDistance
+  fullName: F23.StringSimilarity.Interfaces.ISpanDistance
+  nameWithType: ISpanDistance
+- uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.Interfaces.ISpanDistance.html#F23_StringSimilarity_Interfaces_ISpanDistance_Distance_
+  commentId: Overload:F23.StringSimilarity.Interfaces.ISpanDistance.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Interfaces.ISpanDistance.Distance
+  nameWithType: ISpanDistance.Distance
+- uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.Interfaces.ISpanDistance.html#F23_StringSimilarity_Interfaces_ISpanDistance_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.Interfaces.ISpanDistance.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.Interfaces.ISpanDistance.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: ISpanDistance.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: ISpanDistance.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity
+  name: ISpanSimilarity
+  href: api/F23.StringSimilarity.Interfaces.ISpanSimilarity.html
+  commentId: T:F23.StringSimilarity.Interfaces.ISpanSimilarity
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity
+  nameWithType: ISpanSimilarity
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity*
+  name: Similarity
+  href: api/F23.StringSimilarity.Interfaces.ISpanSimilarity.html#F23_StringSimilarity_Interfaces_ISpanSimilarity_Similarity_
+  commentId: Overload:F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity
+  nameWithType: ISpanSimilarity.Similarity
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.Interfaces.ISpanSimilarity.html#F23_StringSimilarity_Interfaces_ISpanSimilarity_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: ISpanSimilarity.Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: ISpanSimilarity.Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.Interfaces.IStringDistance
+  name: IStringDistance
+  href: api/F23.StringSimilarity.Interfaces.IStringDistance.html
+  commentId: T:F23.StringSimilarity.Interfaces.IStringDistance
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance
+  nameWithType: IStringDistance
+- uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.Interfaces.IStringDistance.Distance(String, String)
+  nameWithType: IStringDistance.Distance(string, string)
+  nameWithType.vb: IStringDistance.Distance(String, String)
+- uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_
+  commentId: Overload:F23.StringSimilarity.Interfaces.IStringDistance.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance.Distance
+  nameWithType: IStringDistance.Distance
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity
+  name: IStringSimilarity
+  href: api/F23.StringSimilarity.Interfaces.IStringSimilarity.html
+  commentId: T:F23.StringSimilarity.Interfaces.IStringSimilarity
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity
+  nameWithType: IStringSimilarity
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  name: Similarity(string, string)
+  href: api/F23.StringSimilarity.Interfaces.IStringSimilarity.html#F23_StringSimilarity_Interfaces_IStringSimilarity_Similarity_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  name.vb: Similarity(String, String)
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(string, string)
+  fullName.vb: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(String, String)
+  nameWithType: IStringSimilarity.Similarity(string, string)
+  nameWithType.vb: IStringSimilarity.Similarity(String, String)
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity*
+  name: Similarity
+  href: api/F23.StringSimilarity.Interfaces.IStringSimilarity.html#F23_StringSimilarity_Interfaces_IStringSimilarity_Similarity_
+  commentId: Overload:F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity
+  nameWithType: IStringSimilarity.Similarity
+- uid: F23.StringSimilarity.Jaccard
+  name: Jaccard
+  href: api/F23.StringSimilarity.Jaccard.html
+  commentId: T:F23.StringSimilarity.Jaccard
+  fullName: F23.StringSimilarity.Jaccard
+  nameWithType: Jaccard
+- uid: F23.StringSimilarity.Jaccard.#ctor
+  name: Jaccard()
+  href: api/F23.StringSimilarity.Jaccard.html#F23_StringSimilarity_Jaccard__ctor
+  commentId: M:F23.StringSimilarity.Jaccard.#ctor
+  name.vb: New()
+  fullName: F23.StringSimilarity.Jaccard.Jaccard()
+  fullName.vb: F23.StringSimilarity.Jaccard.New()
+  nameWithType: Jaccard.Jaccard()
+  nameWithType.vb: Jaccard.New()
+- uid: F23.StringSimilarity.Jaccard.#ctor(System.Int32)
+  name: Jaccard(int)
+  href: api/F23.StringSimilarity.Jaccard.html#F23_StringSimilarity_Jaccard__ctor_System_Int32_
+  commentId: M:F23.StringSimilarity.Jaccard.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: F23.StringSimilarity.Jaccard.Jaccard(int)
+  fullName.vb: F23.StringSimilarity.Jaccard.New(Integer)
+  nameWithType: Jaccard.Jaccard(int)
+  nameWithType.vb: Jaccard.New(Integer)
+- uid: F23.StringSimilarity.Jaccard.#ctor*
+  name: Jaccard
+  href: api/F23.StringSimilarity.Jaccard.html#F23_StringSimilarity_Jaccard__ctor_
+  commentId: Overload:F23.StringSimilarity.Jaccard.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: F23.StringSimilarity.Jaccard.Jaccard
+  fullName.vb: F23.StringSimilarity.Jaccard.New
+  nameWithType: Jaccard.Jaccard
+  nameWithType.vb: Jaccard.New
+- uid: F23.StringSimilarity.Jaccard.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.Jaccard.html#F23_StringSimilarity_Jaccard_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Jaccard.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.Jaccard.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.Jaccard.Distance(String, String)
+  nameWithType: Jaccard.Distance(string, string)
+  nameWithType.vb: Jaccard.Distance(String, String)
+- uid: F23.StringSimilarity.Jaccard.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.Jaccard.html#F23_StringSimilarity_Jaccard_Distance_
+  commentId: Overload:F23.StringSimilarity.Jaccard.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Jaccard.Distance
+  nameWithType: Jaccard.Distance
+- uid: F23.StringSimilarity.Jaccard.Similarity(System.String,System.String)
+  name: Similarity(string, string)
+  href: api/F23.StringSimilarity.Jaccard.html#F23_StringSimilarity_Jaccard_Similarity_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Jaccard.Similarity(System.String,System.String)
+  name.vb: Similarity(String, String)
+  fullName: F23.StringSimilarity.Jaccard.Similarity(string, string)
+  fullName.vb: F23.StringSimilarity.Jaccard.Similarity(String, String)
+  nameWithType: Jaccard.Similarity(string, string)
+  nameWithType.vb: Jaccard.Similarity(String, String)
+- uid: F23.StringSimilarity.Jaccard.Similarity*
+  name: Similarity
+  href: api/F23.StringSimilarity.Jaccard.html#F23_StringSimilarity_Jaccard_Similarity_
+  commentId: Overload:F23.StringSimilarity.Jaccard.Similarity
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Jaccard.Similarity
+  nameWithType: Jaccard.Similarity
+- uid: F23.StringSimilarity.JaroWinkler
+  name: JaroWinkler
+  href: api/F23.StringSimilarity.JaroWinkler.html
+  commentId: T:F23.StringSimilarity.JaroWinkler
+  fullName: F23.StringSimilarity.JaroWinkler
+  nameWithType: JaroWinkler
+- uid: F23.StringSimilarity.JaroWinkler.#ctor
+  name: JaroWinkler()
+  href: api/F23.StringSimilarity.JaroWinkler.html#F23_StringSimilarity_JaroWinkler__ctor
+  commentId: M:F23.StringSimilarity.JaroWinkler.#ctor
+  name.vb: New()
+  fullName: F23.StringSimilarity.JaroWinkler.JaroWinkler()
+  fullName.vb: F23.StringSimilarity.JaroWinkler.New()
+  nameWithType: JaroWinkler.JaroWinkler()
+  nameWithType.vb: JaroWinkler.New()
+- uid: F23.StringSimilarity.JaroWinkler.#ctor(System.Double)
+  name: JaroWinkler(double)
+  href: api/F23.StringSimilarity.JaroWinkler.html#F23_StringSimilarity_JaroWinkler__ctor_System_Double_
+  commentId: M:F23.StringSimilarity.JaroWinkler.#ctor(System.Double)
+  name.vb: New(Double)
+  fullName: F23.StringSimilarity.JaroWinkler.JaroWinkler(double)
+  fullName.vb: F23.StringSimilarity.JaroWinkler.New(Double)
+  nameWithType: JaroWinkler.JaroWinkler(double)
+  nameWithType.vb: JaroWinkler.New(Double)
+- uid: F23.StringSimilarity.JaroWinkler.#ctor*
+  name: JaroWinkler
+  href: api/F23.StringSimilarity.JaroWinkler.html#F23_StringSimilarity_JaroWinkler__ctor_
+  commentId: Overload:F23.StringSimilarity.JaroWinkler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: F23.StringSimilarity.JaroWinkler.JaroWinkler
+  fullName.vb: F23.StringSimilarity.JaroWinkler.New
+  nameWithType: JaroWinkler.JaroWinkler
+  nameWithType.vb: JaroWinkler.New
+- uid: F23.StringSimilarity.JaroWinkler.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.JaroWinkler.html#F23_StringSimilarity_JaroWinkler_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.JaroWinkler.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.JaroWinkler.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.JaroWinkler.Distance(String, String)
+  nameWithType: JaroWinkler.Distance(string, string)
+  nameWithType.vb: JaroWinkler.Distance(String, String)
+- uid: F23.StringSimilarity.JaroWinkler.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.JaroWinkler.html#F23_StringSimilarity_JaroWinkler_Distance_
+  commentId: Overload:F23.StringSimilarity.JaroWinkler.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.JaroWinkler.Distance
+  nameWithType: JaroWinkler.Distance
+- uid: F23.StringSimilarity.JaroWinkler.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.JaroWinkler.html#F23_StringSimilarity_JaroWinkler_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.JaroWinkler.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.JaroWinkler.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.JaroWinkler.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: JaroWinkler.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: JaroWinkler.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.JaroWinkler.Similarity(System.String,System.String)
+  name: Similarity(string, string)
+  href: api/F23.StringSimilarity.JaroWinkler.html#F23_StringSimilarity_JaroWinkler_Similarity_System_String_System_String_
+  commentId: M:F23.StringSimilarity.JaroWinkler.Similarity(System.String,System.String)
+  name.vb: Similarity(String, String)
+  fullName: F23.StringSimilarity.JaroWinkler.Similarity(string, string)
+  fullName.vb: F23.StringSimilarity.JaroWinkler.Similarity(String, String)
+  nameWithType: JaroWinkler.Similarity(string, string)
+  nameWithType.vb: JaroWinkler.Similarity(String, String)
+- uid: F23.StringSimilarity.JaroWinkler.Similarity*
+  name: Similarity
+  href: api/F23.StringSimilarity.JaroWinkler.html#F23_StringSimilarity_JaroWinkler_Similarity_
+  commentId: Overload:F23.StringSimilarity.JaroWinkler.Similarity
+  isSpec: "True"
+  fullName: F23.StringSimilarity.JaroWinkler.Similarity
+  nameWithType: JaroWinkler.Similarity
+- uid: F23.StringSimilarity.JaroWinkler.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.JaroWinkler.html#F23_StringSimilarity_JaroWinkler_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.JaroWinkler.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.JaroWinkler.Similarity<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.JaroWinkler.Similarity(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: JaroWinkler.Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: JaroWinkler.Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.Levenshtein
+  name: Levenshtein
+  href: api/F23.StringSimilarity.Levenshtein.html
+  commentId: T:F23.StringSimilarity.Levenshtein
+  fullName: F23.StringSimilarity.Levenshtein
+  nameWithType: Levenshtein
+- uid: F23.StringSimilarity.Levenshtein.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.Levenshtein.html#F23_StringSimilarity_Levenshtein_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.Levenshtein.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.Levenshtein.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.Levenshtein.Distance(String, String)
+  nameWithType: Levenshtein.Distance(string, string)
+  nameWithType.vb: Levenshtein.Distance(String, String)
+- uid: F23.StringSimilarity.Levenshtein.Distance(System.String,System.String,System.Int32)
+  name: Distance(string, string, int)
+  href: api/F23.StringSimilarity.Levenshtein.html#F23_StringSimilarity_Levenshtein_Distance_System_String_System_String_System_Int32_
+  commentId: M:F23.StringSimilarity.Levenshtein.Distance(System.String,System.String,System.Int32)
+  name.vb: Distance(String, String, Integer)
+  fullName: F23.StringSimilarity.Levenshtein.Distance(string, string, int)
+  fullName.vb: F23.StringSimilarity.Levenshtein.Distance(String, String, Integer)
+  nameWithType: Levenshtein.Distance(string, string, int)
+  nameWithType.vb: Levenshtein.Distance(String, String, Integer)
+- uid: F23.StringSimilarity.Levenshtein.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.Levenshtein.html#F23_StringSimilarity_Levenshtein_Distance_
+  commentId: Overload:F23.StringSimilarity.Levenshtein.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.Levenshtein.Distance
+  nameWithType: Levenshtein.Distance
+- uid: F23.StringSimilarity.Levenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.Levenshtein.html#F23_StringSimilarity_Levenshtein_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.Levenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.Levenshtein.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.Levenshtein.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: Levenshtein.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: Levenshtein.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.Levenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32)
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>, int)
+  href: api/F23.StringSimilarity.Levenshtein.html#F23_StringSimilarity_Levenshtein_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__System_Int32_
+  commentId: M:F23.StringSimilarity.Levenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32)
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T), Integer)
+  fullName: F23.StringSimilarity.Levenshtein.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>, int)
+  fullName.vb: F23.StringSimilarity.Levenshtein.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T), Integer)
+  nameWithType: Levenshtein.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>, int)
+  nameWithType.vb: Levenshtein.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T), Integer)
+- uid: F23.StringSimilarity.LongestCommonSubsequence
+  name: LongestCommonSubsequence
+  href: api/F23.StringSimilarity.LongestCommonSubsequence.html
+  commentId: T:F23.StringSimilarity.LongestCommonSubsequence
+  fullName: F23.StringSimilarity.LongestCommonSubsequence
+  nameWithType: LongestCommonSubsequence
+- uid: F23.StringSimilarity.LongestCommonSubsequence.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.LongestCommonSubsequence.html#F23_StringSimilarity_LongestCommonSubsequence_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.LongestCommonSubsequence.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.LongestCommonSubsequence.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.LongestCommonSubsequence.Distance(String, String)
+  nameWithType: LongestCommonSubsequence.Distance(string, string)
+  nameWithType.vb: LongestCommonSubsequence.Distance(String, String)
+- uid: F23.StringSimilarity.LongestCommonSubsequence.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.LongestCommonSubsequence.html#F23_StringSimilarity_LongestCommonSubsequence_Distance_
+  commentId: Overload:F23.StringSimilarity.LongestCommonSubsequence.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.LongestCommonSubsequence.Distance
+  nameWithType: LongestCommonSubsequence.Distance
+- uid: F23.StringSimilarity.LongestCommonSubsequence.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.LongestCommonSubsequence.html#F23_StringSimilarity_LongestCommonSubsequence_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.LongestCommonSubsequence.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.LongestCommonSubsequence.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.LongestCommonSubsequence.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: LongestCommonSubsequence.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: LongestCommonSubsequence.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.LongestCommonSubsequence.Length(System.String,System.String)
+  name: Length(string, string)
+  href: api/F23.StringSimilarity.LongestCommonSubsequence.html#F23_StringSimilarity_LongestCommonSubsequence_Length_System_String_System_String_
+  commentId: M:F23.StringSimilarity.LongestCommonSubsequence.Length(System.String,System.String)
+  name.vb: Length(String, String)
+  fullName: F23.StringSimilarity.LongestCommonSubsequence.Length(string, string)
+  fullName.vb: F23.StringSimilarity.LongestCommonSubsequence.Length(String, String)
+  nameWithType: LongestCommonSubsequence.Length(string, string)
+  nameWithType.vb: LongestCommonSubsequence.Length(String, String)
+- uid: F23.StringSimilarity.LongestCommonSubsequence.Length*
+  name: Length
+  href: api/F23.StringSimilarity.LongestCommonSubsequence.html#F23_StringSimilarity_LongestCommonSubsequence_Length_
+  commentId: Overload:F23.StringSimilarity.LongestCommonSubsequence.Length
+  isSpec: "True"
+  fullName: F23.StringSimilarity.LongestCommonSubsequence.Length
+  nameWithType: LongestCommonSubsequence.Length
+- uid: F23.StringSimilarity.MetricLCS
+  name: MetricLCS
+  href: api/F23.StringSimilarity.MetricLCS.html
+  commentId: T:F23.StringSimilarity.MetricLCS
+  fullName: F23.StringSimilarity.MetricLCS
+  nameWithType: MetricLCS
+- uid: F23.StringSimilarity.MetricLCS.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.MetricLCS.html#F23_StringSimilarity_MetricLCS_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.MetricLCS.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.MetricLCS.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.MetricLCS.Distance(String, String)
+  nameWithType: MetricLCS.Distance(string, string)
+  nameWithType.vb: MetricLCS.Distance(String, String)
+- uid: F23.StringSimilarity.MetricLCS.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.MetricLCS.html#F23_StringSimilarity_MetricLCS_Distance_
+  commentId: Overload:F23.StringSimilarity.MetricLCS.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.MetricLCS.Distance
+  nameWithType: MetricLCS.Distance
+- uid: F23.StringSimilarity.MetricLCS.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.MetricLCS.html#F23_StringSimilarity_MetricLCS_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.MetricLCS.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.MetricLCS.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.MetricLCS.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: MetricLCS.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: MetricLCS.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.NGram
+  name: NGram
+  href: api/F23.StringSimilarity.NGram.html
+  commentId: T:F23.StringSimilarity.NGram
+  fullName: F23.StringSimilarity.NGram
+  nameWithType: NGram
+- uid: F23.StringSimilarity.NGram.#ctor
+  name: NGram()
+  href: api/F23.StringSimilarity.NGram.html#F23_StringSimilarity_NGram__ctor
+  commentId: M:F23.StringSimilarity.NGram.#ctor
+  name.vb: New()
+  fullName: F23.StringSimilarity.NGram.NGram()
+  fullName.vb: F23.StringSimilarity.NGram.New()
+  nameWithType: NGram.NGram()
+  nameWithType.vb: NGram.New()
+- uid: F23.StringSimilarity.NGram.#ctor(System.Int32)
+  name: NGram(int)
+  href: api/F23.StringSimilarity.NGram.html#F23_StringSimilarity_NGram__ctor_System_Int32_
+  commentId: M:F23.StringSimilarity.NGram.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: F23.StringSimilarity.NGram.NGram(int)
+  fullName.vb: F23.StringSimilarity.NGram.New(Integer)
+  nameWithType: NGram.NGram(int)
+  nameWithType.vb: NGram.New(Integer)
+- uid: F23.StringSimilarity.NGram.#ctor*
+  name: NGram
+  href: api/F23.StringSimilarity.NGram.html#F23_StringSimilarity_NGram__ctor_
+  commentId: Overload:F23.StringSimilarity.NGram.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: F23.StringSimilarity.NGram.NGram
+  fullName.vb: F23.StringSimilarity.NGram.New
+  nameWithType: NGram.NGram
+  nameWithType.vb: NGram.New
+- uid: F23.StringSimilarity.NGram.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.NGram.html#F23_StringSimilarity_NGram_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.NGram.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.NGram.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.NGram.Distance(String, String)
+  nameWithType: NGram.Distance(string, string)
+  nameWithType.vb: NGram.Distance(String, String)
+- uid: F23.StringSimilarity.NGram.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.NGram.html#F23_StringSimilarity_NGram_Distance_
+  commentId: Overload:F23.StringSimilarity.NGram.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.NGram.Distance
+  nameWithType: NGram.Distance
+- uid: F23.StringSimilarity.NormalizedLevenshtein
+  name: NormalizedLevenshtein
+  href: api/F23.StringSimilarity.NormalizedLevenshtein.html
+  commentId: T:F23.StringSimilarity.NormalizedLevenshtein
+  fullName: F23.StringSimilarity.NormalizedLevenshtein
+  nameWithType: NormalizedLevenshtein
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.NormalizedLevenshtein.html#F23_StringSimilarity_NormalizedLevenshtein_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.NormalizedLevenshtein.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.NormalizedLevenshtein.Distance(String, String)
+  nameWithType: NormalizedLevenshtein.Distance(string, string)
+  nameWithType.vb: NormalizedLevenshtein.Distance(String, String)
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.NormalizedLevenshtein.html#F23_StringSimilarity_NormalizedLevenshtein_Distance_
+  commentId: Overload:F23.StringSimilarity.NormalizedLevenshtein.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Distance
+  nameWithType: NormalizedLevenshtein.Distance
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.NormalizedLevenshtein.html#F23_StringSimilarity_NormalizedLevenshtein_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.NormalizedLevenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.NormalizedLevenshtein.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: NormalizedLevenshtein.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: NormalizedLevenshtein.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Similarity(System.String,System.String)
+  name: Similarity(string, string)
+  href: api/F23.StringSimilarity.NormalizedLevenshtein.html#F23_StringSimilarity_NormalizedLevenshtein_Similarity_System_String_System_String_
+  commentId: M:F23.StringSimilarity.NormalizedLevenshtein.Similarity(System.String,System.String)
+  name.vb: Similarity(String, String)
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Similarity(string, string)
+  fullName.vb: F23.StringSimilarity.NormalizedLevenshtein.Similarity(String, String)
+  nameWithType: NormalizedLevenshtein.Similarity(string, string)
+  nameWithType.vb: NormalizedLevenshtein.Similarity(String, String)
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Similarity*
+  name: Similarity
+  href: api/F23.StringSimilarity.NormalizedLevenshtein.html#F23_StringSimilarity_NormalizedLevenshtein_Similarity_
+  commentId: Overload:F23.StringSimilarity.NormalizedLevenshtein.Similarity
+  isSpec: "True"
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Similarity
+  nameWithType: NormalizedLevenshtein.Similarity
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.NormalizedLevenshtein.html#F23_StringSimilarity_NormalizedLevenshtein_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.NormalizedLevenshtein.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Similarity<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.NormalizedLevenshtein.Similarity(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: NormalizedLevenshtein.Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: NormalizedLevenshtein.Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.OptimalStringAlignment
+  name: OptimalStringAlignment
+  href: api/F23.StringSimilarity.OptimalStringAlignment.html
+  commentId: T:F23.StringSimilarity.OptimalStringAlignment
+  fullName: F23.StringSimilarity.OptimalStringAlignment
+  nameWithType: OptimalStringAlignment
+- uid: F23.StringSimilarity.OptimalStringAlignment.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.OptimalStringAlignment.html#F23_StringSimilarity_OptimalStringAlignment_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.OptimalStringAlignment.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.OptimalStringAlignment.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.OptimalStringAlignment.Distance(String, String)
+  nameWithType: OptimalStringAlignment.Distance(string, string)
+  nameWithType.vb: OptimalStringAlignment.Distance(String, String)
+- uid: F23.StringSimilarity.OptimalStringAlignment.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.OptimalStringAlignment.html#F23_StringSimilarity_OptimalStringAlignment_Distance_
+  commentId: Overload:F23.StringSimilarity.OptimalStringAlignment.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.OptimalStringAlignment.Distance
+  nameWithType: OptimalStringAlignment.Distance
+- uid: F23.StringSimilarity.OptimalStringAlignment.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  href: api/F23.StringSimilarity.OptimalStringAlignment.html#F23_StringSimilarity_OptimalStringAlignment_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  commentId: M:F23.StringSimilarity.OptimalStringAlignment.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName: F23.StringSimilarity.OptimalStringAlignment.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  fullName.vb: F23.StringSimilarity.OptimalStringAlignment.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  nameWithType: OptimalStringAlignment.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType.vb: OptimalStringAlignment.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.QGram
+  name: QGram
+  href: api/F23.StringSimilarity.QGram.html
+  commentId: T:F23.StringSimilarity.QGram
+  fullName: F23.StringSimilarity.QGram
+  nameWithType: QGram
+- uid: F23.StringSimilarity.QGram.#ctor
+  name: QGram()
+  href: api/F23.StringSimilarity.QGram.html#F23_StringSimilarity_QGram__ctor
+  commentId: M:F23.StringSimilarity.QGram.#ctor
+  name.vb: New()
+  fullName: F23.StringSimilarity.QGram.QGram()
+  fullName.vb: F23.StringSimilarity.QGram.New()
+  nameWithType: QGram.QGram()
+  nameWithType.vb: QGram.New()
+- uid: F23.StringSimilarity.QGram.#ctor(System.Int32)
+  name: QGram(int)
+  href: api/F23.StringSimilarity.QGram.html#F23_StringSimilarity_QGram__ctor_System_Int32_
+  commentId: M:F23.StringSimilarity.QGram.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: F23.StringSimilarity.QGram.QGram(int)
+  fullName.vb: F23.StringSimilarity.QGram.New(Integer)
+  nameWithType: QGram.QGram(int)
+  nameWithType.vb: QGram.New(Integer)
+- uid: F23.StringSimilarity.QGram.#ctor*
+  name: QGram
+  href: api/F23.StringSimilarity.QGram.html#F23_StringSimilarity_QGram__ctor_
+  commentId: Overload:F23.StringSimilarity.QGram.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: F23.StringSimilarity.QGram.QGram
+  fullName.vb: F23.StringSimilarity.QGram.New
+  nameWithType: QGram.QGram
+  nameWithType.vb: QGram.New
+- uid: F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary{System.String,System.Int32},System.Collections.Generic.IDictionary{System.String,System.Int32})
+  name: Distance(IDictionary<string, int>, IDictionary<string, int>)
+  href: api/F23.StringSimilarity.QGram.html#F23_StringSimilarity_QGram_Distance_System_Collections_Generic_IDictionary_System_String_System_Int32__System_Collections_Generic_IDictionary_System_String_System_Int32__
+  commentId: M:F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary{System.String,System.Int32},System.Collections.Generic.IDictionary{System.String,System.Int32})
+  name.vb: Distance(IDictionary(Of String, Integer), IDictionary(Of String, Integer))
+  fullName: F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary<string, int>, System.Collections.Generic.IDictionary<string, int>)
+  fullName.vb: F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary(Of String, Integer), System.Collections.Generic.IDictionary(Of String, Integer))
+  nameWithType: QGram.Distance(IDictionary<string, int>, IDictionary<string, int>)
+  nameWithType.vb: QGram.Distance(IDictionary(Of String, Integer), IDictionary(Of String, Integer))
+- uid: F23.StringSimilarity.QGram.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.QGram.html#F23_StringSimilarity_QGram_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.QGram.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.QGram.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.QGram.Distance(String, String)
+  nameWithType: QGram.Distance(string, string)
+  nameWithType.vb: QGram.Distance(String, String)
+- uid: F23.StringSimilarity.QGram.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.QGram.html#F23_StringSimilarity_QGram_Distance_
+  commentId: Overload:F23.StringSimilarity.QGram.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.QGram.Distance
+  nameWithType: QGram.Distance
+- uid: F23.StringSimilarity.RatcliffObershelp
+  name: RatcliffObershelp
+  href: api/F23.StringSimilarity.RatcliffObershelp.html
+  commentId: T:F23.StringSimilarity.RatcliffObershelp
+  fullName: F23.StringSimilarity.RatcliffObershelp
+  nameWithType: RatcliffObershelp
+- uid: F23.StringSimilarity.RatcliffObershelp.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.RatcliffObershelp.html#F23_StringSimilarity_RatcliffObershelp_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.RatcliffObershelp.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.RatcliffObershelp.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.RatcliffObershelp.Distance(String, String)
+  nameWithType: RatcliffObershelp.Distance(string, string)
+  nameWithType.vb: RatcliffObershelp.Distance(String, String)
+- uid: F23.StringSimilarity.RatcliffObershelp.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.RatcliffObershelp.html#F23_StringSimilarity_RatcliffObershelp_Distance_
+  commentId: Overload:F23.StringSimilarity.RatcliffObershelp.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.RatcliffObershelp.Distance
+  nameWithType: RatcliffObershelp.Distance
+- uid: F23.StringSimilarity.RatcliffObershelp.Similarity(System.String,System.String)
+  name: Similarity(string, string)
+  href: api/F23.StringSimilarity.RatcliffObershelp.html#F23_StringSimilarity_RatcliffObershelp_Similarity_System_String_System_String_
+  commentId: M:F23.StringSimilarity.RatcliffObershelp.Similarity(System.String,System.String)
+  name.vb: Similarity(String, String)
+  fullName: F23.StringSimilarity.RatcliffObershelp.Similarity(string, string)
+  fullName.vb: F23.StringSimilarity.RatcliffObershelp.Similarity(String, String)
+  nameWithType: RatcliffObershelp.Similarity(string, string)
+  nameWithType.vb: RatcliffObershelp.Similarity(String, String)
+- uid: F23.StringSimilarity.RatcliffObershelp.Similarity*
+  name: Similarity
+  href: api/F23.StringSimilarity.RatcliffObershelp.html#F23_StringSimilarity_RatcliffObershelp_Similarity_
+  commentId: Overload:F23.StringSimilarity.RatcliffObershelp.Similarity
+  isSpec: "True"
+  fullName: F23.StringSimilarity.RatcliffObershelp.Similarity
+  nameWithType: RatcliffObershelp.Similarity
+- uid: F23.StringSimilarity.ShingleBased
+  name: ShingleBased
+  href: api/F23.StringSimilarity.ShingleBased.html
+  commentId: T:F23.StringSimilarity.ShingleBased
+  fullName: F23.StringSimilarity.ShingleBased
+  nameWithType: ShingleBased
+- uid: F23.StringSimilarity.ShingleBased.#ctor
+  name: ShingleBased()
+  href: api/F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased__ctor
+  commentId: M:F23.StringSimilarity.ShingleBased.#ctor
+  name.vb: New()
+  fullName: F23.StringSimilarity.ShingleBased.ShingleBased()
+  fullName.vb: F23.StringSimilarity.ShingleBased.New()
+  nameWithType: ShingleBased.ShingleBased()
+  nameWithType.vb: ShingleBased.New()
+- uid: F23.StringSimilarity.ShingleBased.#ctor(System.Int32)
+  name: ShingleBased(int)
+  href: api/F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased__ctor_System_Int32_
+  commentId: M:F23.StringSimilarity.ShingleBased.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: F23.StringSimilarity.ShingleBased.ShingleBased(int)
+  fullName.vb: F23.StringSimilarity.ShingleBased.New(Integer)
+  nameWithType: ShingleBased.ShingleBased(int)
+  nameWithType.vb: ShingleBased.New(Integer)
+- uid: F23.StringSimilarity.ShingleBased.#ctor*
+  name: ShingleBased
+  href: api/F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased__ctor_
+  commentId: Overload:F23.StringSimilarity.ShingleBased.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: F23.StringSimilarity.ShingleBased.ShingleBased
+  fullName.vb: F23.StringSimilarity.ShingleBased.New
+  nameWithType: ShingleBased.ShingleBased
+  nameWithType.vb: ShingleBased.New
+- uid: F23.StringSimilarity.ShingleBased.GetProfile(System.String)
+  name: GetProfile(string)
+  href: api/F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased_GetProfile_System_String_
+  commentId: M:F23.StringSimilarity.ShingleBased.GetProfile(System.String)
+  name.vb: GetProfile(String)
+  fullName: F23.StringSimilarity.ShingleBased.GetProfile(string)
+  fullName.vb: F23.StringSimilarity.ShingleBased.GetProfile(String)
+  nameWithType: ShingleBased.GetProfile(string)
+  nameWithType.vb: ShingleBased.GetProfile(String)
+- uid: F23.StringSimilarity.ShingleBased.GetProfile*
+  name: GetProfile
+  href: api/F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased_GetProfile_
+  commentId: Overload:F23.StringSimilarity.ShingleBased.GetProfile
+  isSpec: "True"
+  fullName: F23.StringSimilarity.ShingleBased.GetProfile
+  nameWithType: ShingleBased.GetProfile
+- uid: F23.StringSimilarity.ShingleBased.k
+  name: k
+  href: api/F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased_k
+  commentId: P:F23.StringSimilarity.ShingleBased.k
+  fullName: F23.StringSimilarity.ShingleBased.k
+  nameWithType: ShingleBased.k
+- uid: F23.StringSimilarity.ShingleBased.k*
+  name: k
+  href: api/F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased_k_
+  commentId: Overload:F23.StringSimilarity.ShingleBased.k
+  isSpec: "True"
+  fullName: F23.StringSimilarity.ShingleBased.k
+  nameWithType: ShingleBased.k
+- uid: F23.StringSimilarity.SorensenDice
+  name: SorensenDice
+  href: api/F23.StringSimilarity.SorensenDice.html
+  commentId: T:F23.StringSimilarity.SorensenDice
+  fullName: F23.StringSimilarity.SorensenDice
+  nameWithType: SorensenDice
+- uid: F23.StringSimilarity.SorensenDice.#ctor
+  name: SorensenDice()
+  href: api/F23.StringSimilarity.SorensenDice.html#F23_StringSimilarity_SorensenDice__ctor
+  commentId: M:F23.StringSimilarity.SorensenDice.#ctor
+  name.vb: New()
+  fullName: F23.StringSimilarity.SorensenDice.SorensenDice()
+  fullName.vb: F23.StringSimilarity.SorensenDice.New()
+  nameWithType: SorensenDice.SorensenDice()
+  nameWithType.vb: SorensenDice.New()
+- uid: F23.StringSimilarity.SorensenDice.#ctor(System.Int32)
+  name: SorensenDice(int)
+  href: api/F23.StringSimilarity.SorensenDice.html#F23_StringSimilarity_SorensenDice__ctor_System_Int32_
+  commentId: M:F23.StringSimilarity.SorensenDice.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: F23.StringSimilarity.SorensenDice.SorensenDice(int)
+  fullName.vb: F23.StringSimilarity.SorensenDice.New(Integer)
+  nameWithType: SorensenDice.SorensenDice(int)
+  nameWithType.vb: SorensenDice.New(Integer)
+- uid: F23.StringSimilarity.SorensenDice.#ctor*
+  name: SorensenDice
+  href: api/F23.StringSimilarity.SorensenDice.html#F23_StringSimilarity_SorensenDice__ctor_
+  commentId: Overload:F23.StringSimilarity.SorensenDice.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: F23.StringSimilarity.SorensenDice.SorensenDice
+  fullName.vb: F23.StringSimilarity.SorensenDice.New
+  nameWithType: SorensenDice.SorensenDice
+  nameWithType.vb: SorensenDice.New
+- uid: F23.StringSimilarity.SorensenDice.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.SorensenDice.html#F23_StringSimilarity_SorensenDice_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.SorensenDice.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.SorensenDice.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.SorensenDice.Distance(String, String)
+  nameWithType: SorensenDice.Distance(string, string)
+  nameWithType.vb: SorensenDice.Distance(String, String)
+- uid: F23.StringSimilarity.SorensenDice.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.SorensenDice.html#F23_StringSimilarity_SorensenDice_Distance_
+  commentId: Overload:F23.StringSimilarity.SorensenDice.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.SorensenDice.Distance
+  nameWithType: SorensenDice.Distance
+- uid: F23.StringSimilarity.SorensenDice.Similarity(System.String,System.String)
+  name: Similarity(string, string)
+  href: api/F23.StringSimilarity.SorensenDice.html#F23_StringSimilarity_SorensenDice_Similarity_System_String_System_String_
+  commentId: M:F23.StringSimilarity.SorensenDice.Similarity(System.String,System.String)
+  name.vb: Similarity(String, String)
+  fullName: F23.StringSimilarity.SorensenDice.Similarity(string, string)
+  fullName.vb: F23.StringSimilarity.SorensenDice.Similarity(String, String)
+  nameWithType: SorensenDice.Similarity(string, string)
+  nameWithType.vb: SorensenDice.Similarity(String, String)
+- uid: F23.StringSimilarity.SorensenDice.Similarity*
+  name: Similarity
+  href: api/F23.StringSimilarity.SorensenDice.html#F23_StringSimilarity_SorensenDice_Similarity_
+  commentId: Overload:F23.StringSimilarity.SorensenDice.Similarity
+  isSpec: "True"
+  fullName: F23.StringSimilarity.SorensenDice.Similarity
+  nameWithType: SorensenDice.Similarity
+- uid: F23.StringSimilarity.WeightedLevenshtein
+  name: WeightedLevenshtein
+  href: api/F23.StringSimilarity.WeightedLevenshtein.html
+  commentId: T:F23.StringSimilarity.WeightedLevenshtein
+  fullName: F23.StringSimilarity.WeightedLevenshtein
+  nameWithType: WeightedLevenshtein
+- uid: F23.StringSimilarity.WeightedLevenshtein.#ctor(F23.StringSimilarity.ICharacterSubstitution)
+  name: WeightedLevenshtein(ICharacterSubstitution)
+  href: api/F23.StringSimilarity.WeightedLevenshtein.html#F23_StringSimilarity_WeightedLevenshtein__ctor_F23_StringSimilarity_ICharacterSubstitution_
+  commentId: M:F23.StringSimilarity.WeightedLevenshtein.#ctor(F23.StringSimilarity.ICharacterSubstitution)
+  name.vb: New(ICharacterSubstitution)
+  fullName: F23.StringSimilarity.WeightedLevenshtein.WeightedLevenshtein(F23.StringSimilarity.ICharacterSubstitution)
+  fullName.vb: F23.StringSimilarity.WeightedLevenshtein.New(F23.StringSimilarity.ICharacterSubstitution)
+  nameWithType: WeightedLevenshtein.WeightedLevenshtein(ICharacterSubstitution)
+  nameWithType.vb: WeightedLevenshtein.New(ICharacterSubstitution)
+- uid: F23.StringSimilarity.WeightedLevenshtein.#ctor(F23.StringSimilarity.ICharacterSubstitution,F23.StringSimilarity.ICharacterInsDel)
+  name: WeightedLevenshtein(ICharacterSubstitution, ICharacterInsDel)
+  href: api/F23.StringSimilarity.WeightedLevenshtein.html#F23_StringSimilarity_WeightedLevenshtein__ctor_F23_StringSimilarity_ICharacterSubstitution_F23_StringSimilarity_ICharacterInsDel_
+  commentId: M:F23.StringSimilarity.WeightedLevenshtein.#ctor(F23.StringSimilarity.ICharacterSubstitution,F23.StringSimilarity.ICharacterInsDel)
+  name.vb: New(ICharacterSubstitution, ICharacterInsDel)
+  fullName: F23.StringSimilarity.WeightedLevenshtein.WeightedLevenshtein(F23.StringSimilarity.ICharacterSubstitution, F23.StringSimilarity.ICharacterInsDel)
+  fullName.vb: F23.StringSimilarity.WeightedLevenshtein.New(F23.StringSimilarity.ICharacterSubstitution, F23.StringSimilarity.ICharacterInsDel)
+  nameWithType: WeightedLevenshtein.WeightedLevenshtein(ICharacterSubstitution, ICharacterInsDel)
+  nameWithType.vb: WeightedLevenshtein.New(ICharacterSubstitution, ICharacterInsDel)
+- uid: F23.StringSimilarity.WeightedLevenshtein.#ctor*
+  name: WeightedLevenshtein
+  href: api/F23.StringSimilarity.WeightedLevenshtein.html#F23_StringSimilarity_WeightedLevenshtein__ctor_
+  commentId: Overload:F23.StringSimilarity.WeightedLevenshtein.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: F23.StringSimilarity.WeightedLevenshtein.WeightedLevenshtein
+  fullName.vb: F23.StringSimilarity.WeightedLevenshtein.New
+  nameWithType: WeightedLevenshtein.WeightedLevenshtein
+  nameWithType.vb: WeightedLevenshtein.New
+- uid: F23.StringSimilarity.WeightedLevenshtein.Distance(System.String,System.String)
+  name: Distance(string, string)
+  href: api/F23.StringSimilarity.WeightedLevenshtein.html#F23_StringSimilarity_WeightedLevenshtein_Distance_System_String_System_String_
+  commentId: M:F23.StringSimilarity.WeightedLevenshtein.Distance(System.String,System.String)
+  name.vb: Distance(String, String)
+  fullName: F23.StringSimilarity.WeightedLevenshtein.Distance(string, string)
+  fullName.vb: F23.StringSimilarity.WeightedLevenshtein.Distance(String, String)
+  nameWithType: WeightedLevenshtein.Distance(string, string)
+  nameWithType.vb: WeightedLevenshtein.Distance(String, String)
+- uid: F23.StringSimilarity.WeightedLevenshtein.Distance(System.String,System.String,System.Double)
+  name: Distance(string, string, double)
+  href: api/F23.StringSimilarity.WeightedLevenshtein.html#F23_StringSimilarity_WeightedLevenshtein_Distance_System_String_System_String_System_Double_
+  commentId: M:F23.StringSimilarity.WeightedLevenshtein.Distance(System.String,System.String,System.Double)
+  name.vb: Distance(String, String, Double)
+  fullName: F23.StringSimilarity.WeightedLevenshtein.Distance(string, string, double)
+  fullName.vb: F23.StringSimilarity.WeightedLevenshtein.Distance(String, String, Double)
+  nameWithType: WeightedLevenshtein.Distance(string, string, double)
+  nameWithType.vb: WeightedLevenshtein.Distance(String, String, Double)
+- uid: F23.StringSimilarity.WeightedLevenshtein.Distance*
+  name: Distance
+  href: api/F23.StringSimilarity.WeightedLevenshtein.html#F23_StringSimilarity_WeightedLevenshtein_Distance_
+  commentId: Overload:F23.StringSimilarity.WeightedLevenshtein.Distance
+  isSpec: "True"
+  fullName: F23.StringSimilarity.WeightedLevenshtein.Distance
+  nameWithType: WeightedLevenshtein.Distance
