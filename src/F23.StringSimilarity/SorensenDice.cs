@@ -29,9 +29,10 @@ using F23.StringSimilarity.Interfaces;
 // ReSharper disable LoopCanBeConvertedToQuery
 
 namespace F23.StringSimilarity
-{
+{   /// <summary>
     /// Similar to Jaccard index, but this time the similarity is computed as 2 * |V1
     /// inter V2| / (|V1| + |V2|). Distance is computed as 1 - cosine similarity.
+    /// </summary>
     public class SorensenDice : ShingleBased, INormalizedStringDistance, INormalizedStringSimilarity
     {
         /// <summary>
