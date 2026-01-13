@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+  <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net8.0;net9.0;net10.0</TargetFrameworks>
     <PackageId>F23.StringSimilarity</PackageId>
@@ -17,10 +17,12 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <Version>8.0.0-alpha</Version>
+    <!-- Generate XML documentation for all configurations and frameworks -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <PropertyGroup Label="Assembly signing" Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <DefineConstants>FEATURE_SIGNED_ASSEMBLY;$(DefineConstants)</DefineConstants>
-    <AssemblyOriginatorKeyFile>$(SolutionDir)StringSimilarity.NET.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\StringSimilarity.NET.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
@@ -32,7 +34,4 @@
   <ItemGroup>
     <None Include="logo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard2.0\F23.StringSimilarity.xml</DocumentationFile>
-  </PropertyGroup>
 </Project>
