@@ -244,3 +244,6 @@ ModelManifest.xml
 .fake/
 *.DS_Store
 .idea/
+
+# DocFX generated site
+_site/
