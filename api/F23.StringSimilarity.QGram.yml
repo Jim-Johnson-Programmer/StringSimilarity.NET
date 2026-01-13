@@ -1,0 +1,791 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.QGram
+  commentId: T:F23.StringSimilarity.QGram
+  id: QGram
+  parent: F23.StringSimilarity
+  children:
+  - F23.StringSimilarity.QGram.#ctor
+  - F23.StringSimilarity.QGram.#ctor(System.Int32)
+  - F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary{System.String,System.Int32},System.Collections.Generic.IDictionary{System.String,System.Int32})
+  - F23.StringSimilarity.QGram.Distance(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: QGram
+  nameWithType: QGram
+  fullName: F23.StringSimilarity.QGram
+  type: Class
+  source:
+    remote:
+      path: src/F23.StringSimilarity/QGram.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: QGram
+    path: src/F23.StringSimilarity/QGram.cs
+    startLine: 36
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  example: []
+  syntax:
+    content: 'public class QGram : ShingleBased, IStringDistance'
+    content.vb: Public Class QGram Inherits ShingleBased Implements IStringDistance
+  inheritance:
+  - System.Object
+  - F23.StringSimilarity.ShingleBased
+  implements:
+  - F23.StringSimilarity.Interfaces.IStringDistance
+  inheritedMembers:
+  - F23.StringSimilarity.ShingleBased.k
+  - F23.StringSimilarity.ShingleBased.GetProfile(System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: F23.StringSimilarity.QGram.#ctor(System.Int32)
+  commentId: M:F23.StringSimilarity.QGram.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: F23.StringSimilarity.QGram
+  langs:
+  - csharp
+  - vb
+  name: QGram(int)
+  nameWithType: QGram.QGram(int)
+  fullName: F23.StringSimilarity.QGram.QGram(int)
+  type: Constructor
+  source:
+    remote:
+      path: src/F23.StringSimilarity/QGram.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: .ctor
+    path: src/F23.StringSimilarity/QGram.cs
+    startLine: 48
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: >-
+    Q-gram similarity and distance. Defined by Ukkonen in "Approximate
+
+    string-matching with q-grams and maximal matches",
+
+    http://www.sciencedirect.com/science/article/pii/0304397592901434 The
+
+    distance between two strings is defined as the L1 norm of the difference
+
+    of their profiles (the number of occurences of each k-shingle). Q-gram
+
+    distance is a lower bound on Levenshtein distance, but can be computed in
+
+    O(|A| + |B|), where Levenshtein requires O(|A|.|B|)
+  example: []
+  syntax:
+    content: public QGram(int k)
+    parameters:
+    - id: k
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(k As Integer)
+  overload: F23.StringSimilarity.QGram.#ctor*
+  nameWithType.vb: QGram.New(Integer)
+  fullName.vb: F23.StringSimilarity.QGram.New(Integer)
+  name.vb: New(Integer)
+- uid: F23.StringSimilarity.QGram.#ctor
+  commentId: M:F23.StringSimilarity.QGram.#ctor
+  id: '#ctor'
+  parent: F23.StringSimilarity.QGram
+  langs:
+  - csharp
+  - vb
+  name: QGram()
+  nameWithType: QGram.QGram()
+  fullName: F23.StringSimilarity.QGram.QGram()
+  type: Constructor
+  source:
+    remote:
+      path: src/F23.StringSimilarity/QGram.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: .ctor
+    path: src/F23.StringSimilarity/QGram.cs
+    startLine: 60
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: >-
+    Q-gram similarity and distance. Defined by Ukkonen in "Approximate
+
+    string-matching with q-grams and maximal matches",
+
+    http://www.sciencedirect.com/science/article/pii/0304397592901434 The
+
+    distance between two strings is defined as the L1 norm of the difference
+
+    of their profiles (the number of occurence of each k-shingle). Q-gram
+
+    distance is a lower bound on Levenshtein distance, but can be computed in
+
+    O(|A| + |B|), where Levenshtein requires O(|A|.|B|)
+
+    Default k is 3.
+  example: []
+  syntax:
+    content: public QGram()
+    content.vb: Public Sub New()
+  overload: F23.StringSimilarity.QGram.#ctor*
+  nameWithType.vb: QGram.New()
+  fullName.vb: F23.StringSimilarity.QGram.New()
+  name.vb: New()
+- uid: F23.StringSimilarity.QGram.Distance(System.String,System.String)
+  commentId: M:F23.StringSimilarity.QGram.Distance(System.String,System.String)
+  id: Distance(System.String,System.String)
+  parent: F23.StringSimilarity.QGram
+  langs:
+  - csharp
+  - vb
+  name: Distance(string, string)
+  nameWithType: QGram.Distance(string, string)
+  fullName: F23.StringSimilarity.QGram.Distance(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/QGram.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Distance
+    path: src/F23.StringSimilarity/QGram.cs
+    startLine: 70
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: >-
+    The distance between two strings is defined as the L1 norm of the
+
+    difference of their profiles (the number of occurence of each k-shingle).
+  example: []
+  syntax:
+    content: public double Distance(string s1, string s2)
+    parameters:
+    - id: s1
+      type: System.String
+      description: The first string to compare.
+    - id: s2
+      type: System.String
+      description: The second string to compare.
+    return:
+      type: System.Double
+      description: The computed Q-gram distance.
+    content.vb: Public Function Distance(s1 As String, s2 As String) As Double
+  overload: F23.StringSimilarity.QGram.Distance*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If s1 or s2 is null.
+  implements:
+  - F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  nameWithType.vb: QGram.Distance(String, String)
+  fullName.vb: F23.StringSimilarity.QGram.Distance(String, String)
+  name.vb: Distance(String, String)
+- uid: F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary{System.String,System.Int32},System.Collections.Generic.IDictionary{System.String,System.Int32})
+  commentId: M:F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary{System.String,System.Int32},System.Collections.Generic.IDictionary{System.String,System.Int32})
+  id: Distance(System.Collections.Generic.IDictionary{System.String,System.Int32},System.Collections.Generic.IDictionary{System.String,System.Int32})
+  parent: F23.StringSimilarity.QGram
+  langs:
+  - csharp
+  - vb
+  name: Distance(IDictionary<string, int>, IDictionary<string, int>)
+  nameWithType: QGram.Distance(IDictionary<string, int>, IDictionary<string, int>)
+  fullName: F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary<string, int>, System.Collections.Generic.IDictionary<string, int>)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/QGram.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Distance
+    path: src/F23.StringSimilarity/QGram.cs
+    startLine: 99
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: Compute QGram distance using precomputed profiles.
+  example: []
+  syntax:
+    content: public double Distance(IDictionary<string, int> profile1, IDictionary<string, int> profile2)
+    parameters:
+    - id: profile1
+      type: System.Collections.Generic.IDictionary{System.String,System.Int32}
+      description: ''
+    - id: profile2
+      type: System.Collections.Generic.IDictionary{System.String,System.Int32}
+      description: ''
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Function Distance(profile1 As IDictionary(Of String, Integer), profile2 As IDictionary(Of String, Integer)) As Double
+  overload: F23.StringSimilarity.QGram.Distance*
+  nameWithType.vb: QGram.Distance(IDictionary(Of String, Integer), IDictionary(Of String, Integer))
+  fullName.vb: F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary(Of String, Integer), System.Collections.Generic.IDictionary(Of String, Integer))
+  name.vb: Distance(IDictionary(Of String, Integer), IDictionary(Of String, Integer))
+references:
+- uid: F23.StringSimilarity
+  commentId: N:F23.StringSimilarity
+  href: F23.html
+  name: F23.StringSimilarity
+  nameWithType: F23.StringSimilarity
+  fullName: F23.StringSimilarity
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: F23.StringSimilarity.ShingleBased
+  commentId: T:F23.StringSimilarity.ShingleBased
+  parent: F23.StringSimilarity
+  href: F23.StringSimilarity.ShingleBased.html
+  name: ShingleBased
+  nameWithType: ShingleBased
+  fullName: F23.StringSimilarity.ShingleBased
+- uid: F23.StringSimilarity.Interfaces.IStringDistance
+  commentId: T:F23.StringSimilarity.Interfaces.IStringDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.IStringDistance.html
+  name: IStringDistance
+  nameWithType: IStringDistance
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance
+- uid: F23.StringSimilarity.ShingleBased.k
+  commentId: P:F23.StringSimilarity.ShingleBased.k
+  parent: F23.StringSimilarity.ShingleBased
+  href: F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased_k
+  name: k
+  nameWithType: ShingleBased.k
+  fullName: F23.StringSimilarity.ShingleBased.k
+- uid: F23.StringSimilarity.ShingleBased.GetProfile(System.String)
+  commentId: M:F23.StringSimilarity.ShingleBased.GetProfile(System.String)
+  parent: F23.StringSimilarity.ShingleBased
+  isExternal: true
+  href: F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased_GetProfile_System_String_
+  name: GetProfile(string)
+  nameWithType: ShingleBased.GetProfile(string)
+  fullName: F23.StringSimilarity.ShingleBased.GetProfile(string)
+  nameWithType.vb: ShingleBased.GetProfile(String)
+  fullName.vb: F23.StringSimilarity.ShingleBased.GetProfile(String)
+  name.vb: GetProfile(String)
+  spec.csharp:
+  - uid: F23.StringSimilarity.ShingleBased.GetProfile(System.String)
+    name: GetProfile
+    href: F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased_GetProfile_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.ShingleBased.GetProfile(System.String)
+    name: GetProfile
+    href: F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased_GetProfile_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: F23.StringSimilarity.Interfaces
+  commentId: N:F23.StringSimilarity.Interfaces
+  href: F23.html
+  name: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+- uid: F23.StringSimilarity.QGram.#ctor*
+  commentId: Overload:F23.StringSimilarity.QGram.#ctor
+  href: F23.StringSimilarity.QGram.html#F23_StringSimilarity_QGram__ctor_System_Int32_
+  name: QGram
+  nameWithType: QGram.QGram
+  fullName: F23.StringSimilarity.QGram.QGram
+  nameWithType.vb: QGram.New
+  fullName.vb: F23.StringSimilarity.QGram.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: F23.StringSimilarity.QGram.Distance*
+  commentId: Overload:F23.StringSimilarity.QGram.Distance
+  href: F23.StringSimilarity.QGram.html#F23_StringSimilarity_QGram_Distance_System_String_System_String_
+  name: Distance
+  nameWithType: QGram.Distance
+  fullName: F23.StringSimilarity.QGram.Distance
+- uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  commentId: M:F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  parent: F23.StringSimilarity.Interfaces.IStringDistance
+  isExternal: true
+  href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  name: Distance(string, string)
+  nameWithType: IStringDistance.Distance(string, string)
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance.Distance(string, string)
+  nameWithType.vb: IStringDistance.Distance(String, String)
+  fullName.vb: F23.StringSimilarity.Interfaces.IStringDistance.Distance(String, String)
+  name.vb: Distance(String, String)
+  spec.csharp:
+  - uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Collections.Generic.IDictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, int>
+  nameWithType: IDictionary<string, int>
+  fullName: System.Collections.Generic.IDictionary<string, int>
+  nameWithType.vb: IDictionary(Of String, Integer)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, Integer)
+  name.vb: IDictionary(Of String, Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

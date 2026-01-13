@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.ICharacterSubstitution
+  commentId: T:F23.StringSimilarity.ICharacterSubstitution
+  id: ICharacterSubstitution
+  parent: F23.StringSimilarity
+  children:
+  - F23.StringSimilarity.ICharacterSubstitution.Cost(System.Char,System.Char)
+  langs:
+  - csharp
+  - vb
+  name: ICharacterSubstitution
+  nameWithType: ICharacterSubstitution
+  fullName: F23.StringSimilarity.ICharacterSubstitution
+  type: Interface
+  source:
+    remote:
+      path: src/F23.StringSimilarity/ICharacterSubstitution.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: ICharacterSubstitution
+    path: src/F23.StringSimilarity/ICharacterSubstitution.cs
+    startLine: 32
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  example: []
+  syntax:
+    content: public interface ICharacterSubstitution
+    content.vb: Public Interface ICharacterSubstitution
+- uid: F23.StringSimilarity.ICharacterSubstitution.Cost(System.Char,System.Char)
+  commentId: M:F23.StringSimilarity.ICharacterSubstitution.Cost(System.Char,System.Char)
+  id: Cost(System.Char,System.Char)
+  parent: F23.StringSimilarity.ICharacterSubstitution
+  langs:
+  - csharp
+  - vb
+  name: Cost(char, char)
+  nameWithType: ICharacterSubstitution.Cost(char, char)
+  fullName: F23.StringSimilarity.ICharacterSubstitution.Cost(char, char)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/ICharacterSubstitution.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Cost
+    path: src/F23.StringSimilarity/ICharacterSubstitution.cs
+    startLine: 40
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: Indicate the cost of substitution c1 and c2.
+  example: []
+  syntax:
+    content: double Cost(char c1, char c2)
+    parameters:
+    - id: c1
+      type: System.Char
+      description: The first character of the substitution.
+    - id: c2
+      type: System.Char
+      description: The second character of the substitution.
+    return:
+      type: System.Double
+      description: The cost in the range [0, 1].
+    content.vb: Function Cost(c1 As Char, c2 As Char) As Double
+  overload: F23.StringSimilarity.ICharacterSubstitution.Cost*
+  nameWithType.vb: ICharacterSubstitution.Cost(Char, Char)
+  fullName.vb: F23.StringSimilarity.ICharacterSubstitution.Cost(Char, Char)
+  name.vb: Cost(Char, Char)
+references:
+- uid: F23.StringSimilarity
+  commentId: N:F23.StringSimilarity
+  href: F23.html
+  name: F23.StringSimilarity
+  nameWithType: F23.StringSimilarity
+  fullName: F23.StringSimilarity
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+- uid: F23.StringSimilarity.ICharacterSubstitution.Cost*
+  commentId: Overload:F23.StringSimilarity.ICharacterSubstitution.Cost
+  href: F23.StringSimilarity.ICharacterSubstitution.html#F23_StringSimilarity_ICharacterSubstitution_Cost_System_Char_System_Char_
+  name: Cost
+  nameWithType: ICharacterSubstitution.Cost
+  fullName: F23.StringSimilarity.ICharacterSubstitution.Cost
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

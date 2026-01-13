@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.Interfaces.IStringDistance
+  commentId: T:F23.StringSimilarity.Interfaces.IStringDistance
+  id: IStringDistance
+  parent: F23.StringSimilarity.Interfaces
+  children:
+  - F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IStringDistance
+  nameWithType: IStringDistance
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance
+  type: Interface
+  source:
+    remote:
+      path: src/F23.StringSimilarity/Interfaces/IStringDistance.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: IStringDistance
+    path: src/F23.StringSimilarity/Interfaces/IStringDistance.cs
+    startLine: 26
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity.Interfaces
+  syntax:
+    content: public interface IStringDistance
+    content.vb: Public Interface IStringDistance
+- uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  commentId: M:F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  id: Distance(System.String,System.String)
+  parent: F23.StringSimilarity.Interfaces.IStringDistance
+  langs:
+  - csharp
+  - vb
+  name: Distance(string, string)
+  nameWithType: IStringDistance.Distance(string, string)
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance.Distance(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/Interfaces/IStringDistance.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Distance
+    path: src/F23.StringSimilarity/Interfaces/IStringDistance.cs
+    startLine: 35
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity.Interfaces
+  summary: >-
+    Compute and return a measure of distance.
+
+    Must be &gt;= 0.
+  example: []
+  syntax:
+    content: double Distance(string s1, string s2)
+    parameters:
+    - id: s1
+      type: System.String
+      description: ''
+    - id: s2
+      type: System.String
+      description: ''
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Function Distance(s1 As String, s2 As String) As Double
+  overload: F23.StringSimilarity.Interfaces.IStringDistance.Distance*
+  nameWithType.vb: IStringDistance.Distance(String, String)
+  fullName.vb: F23.StringSimilarity.Interfaces.IStringDistance.Distance(String, String)
+  name.vb: Distance(String, String)
+references:
+- uid: F23.StringSimilarity.Interfaces
+  commentId: N:F23.StringSimilarity.Interfaces
+  href: F23.html
+  name: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+- uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance*
+  commentId: Overload:F23.StringSimilarity.Interfaces.IStringDistance.Distance
+  href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  name: Distance
+  nameWithType: IStringDistance.Distance
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance.Distance
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

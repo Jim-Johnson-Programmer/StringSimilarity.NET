@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.IStringSimilarity
+  id: IStringSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  children:
+  - F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IStringSimilarity
+  nameWithType: IStringSimilarity
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity
+  type: Interface
+  source:
+    remote:
+      path: src/F23.StringSimilarity/Interfaces/IStringSimilarity.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: IStringSimilarity
+    path: src/F23.StringSimilarity/Interfaces/IStringSimilarity.cs
+    startLine: 26
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity.Interfaces
+  syntax:
+    content: public interface IStringSimilarity
+    content.vb: Public Interface IStringSimilarity
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  commentId: M:F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  id: Similarity(System.String,System.String)
+  parent: F23.StringSimilarity.Interfaces.IStringSimilarity
+  langs:
+  - csharp
+  - vb
+  name: Similarity(string, string)
+  nameWithType: IStringSimilarity.Similarity(string, string)
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/Interfaces/IStringSimilarity.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Similarity
+    path: src/F23.StringSimilarity/Interfaces/IStringSimilarity.cs
+    startLine: 34
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity.Interfaces
+  summary: Compute and return a measure of similarity between 2 strings.
+  example: []
+  syntax:
+    content: double Similarity(string s1, string s2)
+    parameters:
+    - id: s1
+      type: System.String
+      description: The first string
+    - id: s2
+      type: System.String
+      description: The second string
+    return:
+      type: System.Double
+      description: Similarity (0 means both strings are completely different)
+    content.vb: Function Similarity(s1 As String, s2 As String) As Double
+  overload: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity*
+  nameWithType.vb: IStringSimilarity.Similarity(String, String)
+  fullName.vb: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(String, String)
+  name.vb: Similarity(String, String)
+references:
+- uid: F23.StringSimilarity.Interfaces
+  commentId: N:F23.StringSimilarity.Interfaces
+  href: F23.html
+  name: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity*
+  commentId: Overload:F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity
+  href: F23.StringSimilarity.Interfaces.IStringSimilarity.html#F23_StringSimilarity_Interfaces_IStringSimilarity_Similarity_System_String_System_String_
+  name: Similarity
+  nameWithType: IStringSimilarity.Similarity
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

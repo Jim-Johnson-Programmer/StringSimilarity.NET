@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.Interfaces
+  commentId: N:F23.StringSimilarity.Interfaces
+  id: F23.StringSimilarity.Interfaces
+  children:
+  - F23.StringSimilarity.Interfaces.IMetricSpanDistance
+  - F23.StringSimilarity.Interfaces.IMetricStringDistance
+  - F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+  - F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+  - F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  - F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  - F23.StringSimilarity.Interfaces.ISpanDistance
+  - F23.StringSimilarity.Interfaces.ISpanSimilarity
+  - F23.StringSimilarity.Interfaces.IStringDistance
+  - F23.StringSimilarity.Interfaces.IStringSimilarity
+  langs:
+  - csharp
+  - vb
+  name: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  type: Namespace
+  assemblies:
+  - F23.StringSimilarity
+references:
+- uid: F23.StringSimilarity.Interfaces.IMetricSpanDistance
+  commentId: T:F23.StringSimilarity.Interfaces.IMetricSpanDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.IMetricSpanDistance.html
+  name: IMetricSpanDistance
+  nameWithType: IMetricSpanDistance
+  fullName: F23.StringSimilarity.Interfaces.IMetricSpanDistance
+- uid: F23.StringSimilarity.Interfaces.IMetricStringDistance
+  commentId: T:F23.StringSimilarity.Interfaces.IMetricStringDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.IMetricStringDistance.html
+  name: IMetricStringDistance
+  nameWithType: IMetricStringDistance
+  fullName: F23.StringSimilarity.Interfaces.IMetricStringDistance
+- uid: F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.INormalizedSpanDistance.html
+  name: INormalizedSpanDistance
+  nameWithType: INormalizedSpanDistance
+  fullName: F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+- uid: F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity.html
+  name: INormalizedSpanSimilarity
+  nameWithType: INormalizedSpanSimilarity
+  fullName: F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+- uid: F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.INormalizedStringDistance.html
+  name: INormalizedStringDistance
+  nameWithType: INormalizedStringDistance
+  fullName: F23.StringSimilarity.Interfaces.INormalizedStringDistance
+- uid: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity.html
+  name: INormalizedStringSimilarity
+  nameWithType: INormalizedStringSimilarity
+  fullName: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+- uid: F23.StringSimilarity.Interfaces.ISpanDistance
+  commentId: T:F23.StringSimilarity.Interfaces.ISpanDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.ISpanDistance.html
+  name: ISpanDistance
+  nameWithType: ISpanDistance
+  fullName: F23.StringSimilarity.Interfaces.ISpanDistance
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.ISpanSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html
+  name: ISpanSimilarity
+  nameWithType: ISpanSimilarity
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity
+- uid: F23.StringSimilarity.Interfaces.IStringDistance
+  commentId: T:F23.StringSimilarity.Interfaces.IStringDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.IStringDistance.html
+  name: IStringDistance
+  nameWithType: IStringDistance
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.IStringSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.IStringSimilarity.html
+  name: IStringSimilarity
+  nameWithType: IStringSimilarity
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity
+- uid: F23.StringSimilarity.Interfaces
+  commentId: N:F23.StringSimilarity.Interfaces
+  href: F23.html
+  name: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html

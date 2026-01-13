@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  id: INormalizedStringDistance
+  parent: F23.StringSimilarity.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: INormalizedStringDistance
+  nameWithType: INormalizedStringDistance
+  fullName: F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  type: Interface
+  source:
+    remote:
+      path: src/F23.StringSimilarity/Interfaces/INormalizedStringDistance.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: INormalizedStringDistance
+    path: src/F23.StringSimilarity/Interfaces/INormalizedStringDistance.cs
+    startLine: 26
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity.Interfaces
+  syntax:
+    content: 'public interface INormalizedStringDistance : IStringDistance'
+    content.vb: Public Interface INormalizedStringDistance Inherits IStringDistance
+  inheritedMembers:
+  - F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+references:
+- uid: F23.StringSimilarity.Interfaces
+  commentId: N:F23.StringSimilarity.Interfaces
+  href: F23.html
+  name: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+- uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  commentId: M:F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  parent: F23.StringSimilarity.Interfaces.IStringDistance
+  isExternal: true
+  href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  name: Distance(string, string)
+  nameWithType: IStringDistance.Distance(string, string)
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance.Distance(string, string)
+  nameWithType.vb: IStringDistance.Distance(String, String)
+  fullName.vb: F23.StringSimilarity.Interfaces.IStringDistance.Distance(String, String)
+  name.vb: Distance(String, String)
+  spec.csharp:
+  - uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: F23.StringSimilarity.Interfaces.IStringDistance
+  commentId: T:F23.StringSimilarity.Interfaces.IStringDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.IStringDistance.html
+  name: IStringDistance
+  nameWithType: IStringDistance
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance

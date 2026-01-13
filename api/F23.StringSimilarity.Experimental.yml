@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.Experimental
+  commentId: N:F23.StringSimilarity.Experimental
+  id: F23.StringSimilarity.Experimental
+  children:
+  - F23.StringSimilarity.Experimental.Sift4
+  langs:
+  - csharp
+  - vb
+  name: F23.StringSimilarity.Experimental
+  nameWithType: F23.StringSimilarity.Experimental
+  fullName: F23.StringSimilarity.Experimental
+  type: Namespace
+  assemblies:
+  - F23.StringSimilarity
+references:
+- uid: F23.StringSimilarity.Experimental.Sift4
+  commentId: T:F23.StringSimilarity.Experimental.Sift4
+  href: F23.StringSimilarity.Experimental.Sift4.html
+  name: Sift4
+  nameWithType: Sift4
+  fullName: F23.StringSimilarity.Experimental.Sift4

@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  id: INormalizedStringSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: INormalizedStringSimilarity
+  nameWithType: INormalizedStringSimilarity
+  fullName: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  type: Interface
+  source:
+    remote:
+      path: src/F23.StringSimilarity/Interfaces/INormalizedStringSimilarity.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: INormalizedStringSimilarity
+    path: src/F23.StringSimilarity/Interfaces/INormalizedStringSimilarity.cs
+    startLine: 26
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity.Interfaces
+  syntax:
+    content: 'public interface INormalizedStringSimilarity : IStringSimilarity'
+    content.vb: Public Interface INormalizedStringSimilarity Inherits IStringSimilarity
+  inheritedMembers:
+  - F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+references:
+- uid: F23.StringSimilarity.Interfaces
+  commentId: N:F23.StringSimilarity.Interfaces
+  href: F23.html
+  name: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  commentId: M:F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  parent: F23.StringSimilarity.Interfaces.IStringSimilarity
+  isExternal: true
+  href: F23.StringSimilarity.Interfaces.IStringSimilarity.html#F23_StringSimilarity_Interfaces_IStringSimilarity_Similarity_System_String_System_String_
+  name: Similarity(string, string)
+  nameWithType: IStringSimilarity.Similarity(string, string)
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(string, string)
+  nameWithType.vb: IStringSimilarity.Similarity(String, String)
+  fullName.vb: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(String, String)
+  name.vb: Similarity(String, String)
+  spec.csharp:
+  - uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+    name: Similarity
+    href: F23.StringSimilarity.Interfaces.IStringSimilarity.html#F23_StringSimilarity_Interfaces_IStringSimilarity_Similarity_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+    name: Similarity
+    href: F23.StringSimilarity.Interfaces.IStringSimilarity.html#F23_StringSimilarity_Interfaces_IStringSimilarity_Similarity_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.IStringSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.IStringSimilarity.html
+  name: IStringSimilarity
+  nameWithType: IStringSimilarity
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity

@@ -1,0 +1,1044 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.NormalizedLevenshtein
+  commentId: T:F23.StringSimilarity.NormalizedLevenshtein
+  id: NormalizedLevenshtein
+  parent: F23.StringSimilarity
+  children:
+  - F23.StringSimilarity.NormalizedLevenshtein.Distance(System.String,System.String)
+  - F23.StringSimilarity.NormalizedLevenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  - F23.StringSimilarity.NormalizedLevenshtein.Similarity(System.String,System.String)
+  - F23.StringSimilarity.NormalizedLevenshtein.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  langs:
+  - csharp
+  - vb
+  name: NormalizedLevenshtein
+  nameWithType: NormalizedLevenshtein
+  fullName: F23.StringSimilarity.NormalizedLevenshtein
+  type: Class
+  source:
+    remote:
+      path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: NormalizedLevenshtein
+    path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+    startLine: 33
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  example: []
+  syntax:
+    content: 'public class NormalizedLevenshtein : INormalizedStringDistance, IStringDistance, INormalizedStringSimilarity, IStringSimilarity, INormalizedSpanDistance, ISpanDistance, INormalizedSpanSimilarity, ISpanSimilarity'
+    content.vb: Public Class NormalizedLevenshtein Implements INormalizedStringDistance, IStringDistance, INormalizedStringSimilarity, IStringSimilarity, INormalizedSpanDistance, ISpanDistance, INormalizedSpanSimilarity, ISpanSimilarity
+  inheritance:
+  - System.Object
+  implements:
+  - F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  - F23.StringSimilarity.Interfaces.IStringDistance
+  - F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  - F23.StringSimilarity.Interfaces.IStringSimilarity
+  - F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+  - F23.StringSimilarity.Interfaces.ISpanDistance
+  - F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+  - F23.StringSimilarity.Interfaces.ISpanSimilarity
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Distance(System.String,System.String)
+  commentId: M:F23.StringSimilarity.NormalizedLevenshtein.Distance(System.String,System.String)
+  id: Distance(System.String,System.String)
+  parent: F23.StringSimilarity.NormalizedLevenshtein
+  langs:
+  - csharp
+  - vb
+  name: Distance(string, string)
+  nameWithType: NormalizedLevenshtein.Distance(string, string)
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Distance(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Distance
+    path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+    startLine: 44
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: Compute distance as Levenshtein(s1, s2) / max(|s1|, |s2|).
+  example: []
+  syntax:
+    content: public double Distance(string s1, string s2)
+    parameters:
+    - id: s1
+      type: System.String
+      description: The first string to compare.
+    - id: s2
+      type: System.String
+      description: The second string to compare.
+    return:
+      type: System.Double
+      description: The computed distance in the range [0, 1]
+    content.vb: Public Function Distance(s1 As String, s2 As String) As Double
+  overload: F23.StringSimilarity.NormalizedLevenshtein.Distance*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If s1 or s2 is null.
+  implements:
+  - F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  nameWithType.vb: NormalizedLevenshtein.Distance(String, String)
+  fullName.vb: F23.StringSimilarity.NormalizedLevenshtein.Distance(String, String)
+  name.vb: Distance(String, String)
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  commentId: M:F23.StringSimilarity.NormalizedLevenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  id: Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  parent: F23.StringSimilarity.NormalizedLevenshtein
+  langs:
+  - csharp
+  - vb
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: NormalizedLevenshtein.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Distance
+    path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+    startLine: 47
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: >-
+    Compute and return a measure of distance.
+
+    Must be &gt;= 0.
+
+
+    This method operates on spans such as byte arrays.
+
+    Note that, when used on bytes, string encodings that
+
+    use more than one byte per codepoint (such as UTF-8)
+
+    are not supported and will most likely return
+
+    incorrect results.
+  example: []
+  syntax:
+    content: 'public double Distance<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
+    parameters:
+    - id: s1
+      type: System.ReadOnlySpan{{T}}
+    - id: s2
+      type: System.ReadOnlySpan{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Double
+      description: The measure of distance between the spans.
+    content.vb: Public Function Distance(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
+  overload: F23.StringSimilarity.NormalizedLevenshtein.Distance*
+  implements:
+  - F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
+  nameWithType.vb: NormalizedLevenshtein.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: F23.StringSimilarity.NormalizedLevenshtein.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Similarity(System.String,System.String)
+  commentId: M:F23.StringSimilarity.NormalizedLevenshtein.Similarity(System.String,System.String)
+  id: Similarity(System.String,System.String)
+  parent: F23.StringSimilarity.NormalizedLevenshtein
+  langs:
+  - csharp
+  - vb
+  name: Similarity(string, string)
+  nameWithType: NormalizedLevenshtein.Similarity(string, string)
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Similarity(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Similarity
+    path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+    startLine: 82
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: Return 1 - distance.
+  example: []
+  syntax:
+    content: public double Similarity(string s1, string s2)
+    parameters:
+    - id: s1
+      type: System.String
+      description: The first string to compare.
+    - id: s2
+      type: System.String
+      description: The second string to compare.
+    return:
+      type: System.Double
+      description: 1 - distance
+    content.vb: Public Function Similarity(s1 As String, s2 As String) As Double
+  overload: F23.StringSimilarity.NormalizedLevenshtein.Similarity*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If s1 or s2 is null.
+  implements:
+  - F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  nameWithType.vb: NormalizedLevenshtein.Similarity(String, String)
+  fullName.vb: F23.StringSimilarity.NormalizedLevenshtein.Similarity(String, String)
+  name.vb: Similarity(String, String)
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  commentId: M:F23.StringSimilarity.NormalizedLevenshtein.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  id: Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  parent: F23.StringSimilarity.NormalizedLevenshtein
+  langs:
+  - csharp
+  - vb
+  name: Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: NormalizedLevenshtein.Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Similarity<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Similarity
+    path: src/F23.StringSimilarity/NormalizedLevenshtein.cs
+    startLine: 85
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: Compute and return a measure of similarity between 2 spans.
+  example: []
+  syntax:
+    content: 'public double Similarity<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
+    parameters:
+    - id: s1
+      type: System.ReadOnlySpan{{T}}
+      description: The first span
+    - id: s2
+      type: System.ReadOnlySpan{{T}}
+      description: The second span
+    typeParameters:
+    - id: T
+    return:
+      type: System.Double
+      description: Similarity (0 means both spans are completely different)
+    content.vb: Public Function Similarity(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
+  overload: F23.StringSimilarity.NormalizedLevenshtein.Similarity*
+  implements:
+  - F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
+  nameWithType.vb: NormalizedLevenshtein.Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: F23.StringSimilarity.NormalizedLevenshtein.Similarity(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+references:
+- uid: F23.StringSimilarity
+  commentId: N:F23.StringSimilarity
+  href: F23.html
+  name: F23.StringSimilarity
+  nameWithType: F23.StringSimilarity
+  fullName: F23.StringSimilarity
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedStringDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.INormalizedStringDistance.html
+  name: INormalizedStringDistance
+  nameWithType: INormalizedStringDistance
+  fullName: F23.StringSimilarity.Interfaces.INormalizedStringDistance
+- uid: F23.StringSimilarity.Interfaces.IStringDistance
+  commentId: T:F23.StringSimilarity.Interfaces.IStringDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.IStringDistance.html
+  name: IStringDistance
+  nameWithType: IStringDistance
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance
+- uid: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity.html
+  name: INormalizedStringSimilarity
+  nameWithType: INormalizedStringSimilarity
+  fullName: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.IStringSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.IStringSimilarity.html
+  name: IStringSimilarity
+  nameWithType: IStringSimilarity
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity
+- uid: F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.INormalizedSpanDistance.html
+  name: INormalizedSpanDistance
+  nameWithType: INormalizedSpanDistance
+  fullName: F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+- uid: F23.StringSimilarity.Interfaces.ISpanDistance
+  commentId: T:F23.StringSimilarity.Interfaces.ISpanDistance
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.ISpanDistance.html
+  name: ISpanDistance
+  nameWithType: ISpanDistance
+  fullName: F23.StringSimilarity.Interfaces.ISpanDistance
+- uid: F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity.html
+  name: INormalizedSpanSimilarity
+  nameWithType: INormalizedSpanSimilarity
+  fullName: F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.ISpanSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html
+  name: ISpanSimilarity
+  nameWithType: ISpanSimilarity
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: F23.StringSimilarity.Interfaces
+  commentId: N:F23.StringSimilarity.Interfaces
+  href: F23.html
+  name: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Distance*
+  commentId: Overload:F23.StringSimilarity.NormalizedLevenshtein.Distance
+  href: F23.StringSimilarity.NormalizedLevenshtein.html#F23_StringSimilarity_NormalizedLevenshtein_Distance_System_String_System_String_
+  name: Distance
+  nameWithType: NormalizedLevenshtein.Distance
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Distance
+- uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  commentId: M:F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+  parent: F23.StringSimilarity.Interfaces.IStringDistance
+  isExternal: true
+  href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  name: Distance(string, string)
+  nameWithType: IStringDistance.Distance(string, string)
+  fullName: F23.StringSimilarity.Interfaces.IStringDistance.Distance(string, string)
+  nameWithType.vb: IStringDistance.Distance(String, String)
+  fullName.vb: F23.StringSimilarity.Interfaces.IStringDistance.Distance(String, String)
+  name.vb: Distance(String, String)
+  spec.csharp:
+  - uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.Interfaces.IStringDistance.Distance(System.String,System.String)
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.IStringDistance.html#F23_StringSimilarity_Interfaces_IStringDistance_Distance_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
+  commentId: M:F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  parent: F23.StringSimilarity.Interfaces.ISpanDistance
+  definition: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  href: F23.StringSimilarity.Interfaces.ISpanDistance.html#F23_StringSimilarity_Interfaces_ISpanDistance_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: ISpanDistance.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: F23.StringSimilarity.Interfaces.ISpanDistance.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  nameWithType.vb: ISpanDistance.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: F23.StringSimilarity.Interfaces.ISpanDistance.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  spec.csharp:
+  - uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.ISpanDistance.html#F23_StringSimilarity_Interfaces_ISpanDistance_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.ISpanDistance.html#F23_StringSimilarity_Interfaces_ISpanDistance_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.ReadOnlySpan{{T}}
+  commentId: T:System.ReadOnlySpan{``0}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  commentId: M:F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  isExternal: true
+  href: F23.StringSimilarity.Interfaces.ISpanDistance.html#F23_StringSimilarity_Interfaces_ISpanDistance_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  name: Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: ISpanDistance.Distance<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: F23.StringSimilarity.Interfaces.ISpanDistance.Distance<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  nameWithType.vb: ISpanDistance.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: F23.StringSimilarity.Interfaces.ISpanDistance.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  spec.csharp:
+  - uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.ISpanDistance.html#F23_StringSimilarity_Interfaces_ISpanDistance_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Distance
+    href: F23.StringSimilarity.Interfaces.ISpanDistance.html#F23_StringSimilarity_Interfaces_ISpanDistance_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: F23.StringSimilarity.NormalizedLevenshtein.Similarity*
+  commentId: Overload:F23.StringSimilarity.NormalizedLevenshtein.Similarity
+  href: F23.StringSimilarity.NormalizedLevenshtein.html#F23_StringSimilarity_NormalizedLevenshtein_Similarity_System_String_System_String_
+  name: Similarity
+  nameWithType: NormalizedLevenshtein.Similarity
+  fullName: F23.StringSimilarity.NormalizedLevenshtein.Similarity
+- uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  commentId: M:F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+  parent: F23.StringSimilarity.Interfaces.IStringSimilarity
+  isExternal: true
+  href: F23.StringSimilarity.Interfaces.IStringSimilarity.html#F23_StringSimilarity_Interfaces_IStringSimilarity_Similarity_System_String_System_String_
+  name: Similarity(string, string)
+  nameWithType: IStringSimilarity.Similarity(string, string)
+  fullName: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(string, string)
+  nameWithType.vb: IStringSimilarity.Similarity(String, String)
+  fullName.vb: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(String, String)
+  name.vb: Similarity(String, String)
+  spec.csharp:
+  - uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+    name: Similarity
+    href: F23.StringSimilarity.Interfaces.IStringSimilarity.html#F23_StringSimilarity_Interfaces_IStringSimilarity_Similarity_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.Interfaces.IStringSimilarity.Similarity(System.String,System.String)
+    name: Similarity
+    href: F23.StringSimilarity.Interfaces.IStringSimilarity.html#F23_StringSimilarity_Interfaces_IStringSimilarity_Similarity_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
+  commentId: M:F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  parent: F23.StringSimilarity.Interfaces.ISpanSimilarity
+  definition: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html#F23_StringSimilarity_Interfaces_ISpanSimilarity_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  name: Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: ISpanSimilarity.Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  nameWithType.vb: ISpanSimilarity.Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  spec.csharp:
+  - uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Similarity
+    href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html#F23_StringSimilarity_Interfaces_ISpanSimilarity_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Similarity
+    href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html#F23_StringSimilarity_Interfaces_ISpanSimilarity_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  commentId: M:F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  isExternal: true
+  href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html#F23_StringSimilarity_Interfaces_ISpanSimilarity_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  name: Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: ISpanSimilarity.Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  nameWithType.vb: ISpanSimilarity.Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  spec.csharp:
+  - uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Similarity
+    href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html#F23_StringSimilarity_Interfaces_ISpanSimilarity_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Similarity
+    href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html#F23_StringSimilarity_Interfaces_ISpanSimilarity_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )

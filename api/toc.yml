@@ -1,0 +1,99 @@
+### YamlMime:TableOfContent
+items:
+- uid: F23.StringSimilarity
+  name: F23.StringSimilarity
+  type: Namespace
+  items:
+  - uid: F23.StringSimilarity.Cosine
+    name: Cosine
+    type: Class
+  - uid: F23.StringSimilarity.Damerau
+    name: Damerau
+    type: Class
+  - uid: F23.StringSimilarity.ICharacterInsDel
+    name: ICharacterInsDel
+    type: Interface
+  - uid: F23.StringSimilarity.ICharacterSubstitution
+    name: ICharacterSubstitution
+    type: Interface
+  - uid: F23.StringSimilarity.Jaccard
+    name: Jaccard
+    type: Class
+  - uid: F23.StringSimilarity.JaroWinkler
+    name: JaroWinkler
+    type: Class
+  - uid: F23.StringSimilarity.Levenshtein
+    name: Levenshtein
+    type: Class
+  - uid: F23.StringSimilarity.LongestCommonSubsequence
+    name: LongestCommonSubsequence
+    type: Class
+  - uid: F23.StringSimilarity.MetricLCS
+    name: MetricLCS
+    type: Class
+  - uid: F23.StringSimilarity.NGram
+    name: NGram
+    type: Class
+  - uid: F23.StringSimilarity.NormalizedLevenshtein
+    name: NormalizedLevenshtein
+    type: Class
+  - uid: F23.StringSimilarity.OptimalStringAlignment
+    name: OptimalStringAlignment
+    type: Class
+  - uid: F23.StringSimilarity.QGram
+    name: QGram
+    type: Class
+  - uid: F23.StringSimilarity.RatcliffObershelp
+    name: RatcliffObershelp
+    type: Class
+  - uid: F23.StringSimilarity.ShingleBased
+    name: ShingleBased
+    type: Class
+  - uid: F23.StringSimilarity.SorensenDice
+    name: SorensenDice
+    type: Class
+  - uid: F23.StringSimilarity.WeightedLevenshtein
+    name: WeightedLevenshtein
+    type: Class
+- uid: F23.StringSimilarity.Experimental
+  name: F23.StringSimilarity.Experimental
+  type: Namespace
+  items:
+  - uid: F23.StringSimilarity.Experimental.Sift4
+    name: Sift4
+    type: Class
+- uid: F23.StringSimilarity.Interfaces
+  name: F23.StringSimilarity.Interfaces
+  type: Namespace
+  items:
+  - uid: F23.StringSimilarity.Interfaces.IMetricSpanDistance
+    name: IMetricSpanDistance
+    type: Interface
+  - uid: F23.StringSimilarity.Interfaces.IMetricStringDistance
+    name: IMetricStringDistance
+    type: Interface
+  - uid: F23.StringSimilarity.Interfaces.INormalizedSpanDistance
+    name: INormalizedSpanDistance
+    type: Interface
+  - uid: F23.StringSimilarity.Interfaces.INormalizedSpanSimilarity
+    name: INormalizedSpanSimilarity
+    type: Interface
+  - uid: F23.StringSimilarity.Interfaces.INormalizedStringDistance
+    name: INormalizedStringDistance
+    type: Interface
+  - uid: F23.StringSimilarity.Interfaces.INormalizedStringSimilarity
+    name: INormalizedStringSimilarity
+    type: Interface
+  - uid: F23.StringSimilarity.Interfaces.ISpanDistance
+    name: ISpanDistance
+    type: Interface
+  - uid: F23.StringSimilarity.Interfaces.ISpanSimilarity
+    name: ISpanSimilarity
+    type: Interface
+  - uid: F23.StringSimilarity.Interfaces.IStringDistance
+    name: IStringDistance
+    type: Interface
+  - uid: F23.StringSimilarity.Interfaces.IStringSimilarity
+    name: IStringSimilarity
+    type: Interface
+memberLayout: SamePage

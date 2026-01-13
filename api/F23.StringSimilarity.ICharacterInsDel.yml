@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.ICharacterInsDel
+  commentId: T:F23.StringSimilarity.ICharacterInsDel
+  id: ICharacterInsDel
+  parent: F23.StringSimilarity
+  children:
+  - F23.StringSimilarity.ICharacterInsDel.DeletionCost(System.Char)
+  - F23.StringSimilarity.ICharacterInsDel.InsertionCost(System.Char)
+  langs:
+  - csharp
+  - vb
+  name: ICharacterInsDel
+  nameWithType: ICharacterInsDel
+  fullName: F23.StringSimilarity.ICharacterInsDel
+  type: Interface
+  source:
+    remote:
+      path: src/F23.StringSimilarity/ICharacterInsDel.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: ICharacterInsDel
+    path: src/F23.StringSimilarity/ICharacterInsDel.cs
+    startLine: 7
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: >-
+    As an adjunct to <xref href="F23.StringSimilarity.ICharacterSubstitution" data-throw-if-not-resolved="false"></xref>, this interface
+
+    allows you to specify the cost of deletion or insertion of a
+
+    character.
+  example: []
+  syntax:
+    content: public interface ICharacterInsDel
+    content.vb: Public Interface ICharacterInsDel
+- uid: F23.StringSimilarity.ICharacterInsDel.DeletionCost(System.Char)
+  commentId: M:F23.StringSimilarity.ICharacterInsDel.DeletionCost(System.Char)
+  id: DeletionCost(System.Char)
+  parent: F23.StringSimilarity.ICharacterInsDel
+  langs:
+  - csharp
+  - vb
+  name: DeletionCost(char)
+  nameWithType: ICharacterInsDel.DeletionCost(char)
+  fullName: F23.StringSimilarity.ICharacterInsDel.DeletionCost(char)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/ICharacterInsDel.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: DeletionCost
+    path: src/F23.StringSimilarity/ICharacterInsDel.cs
+    startLine: 15
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: Computes the deletion cost.
+  example: []
+  syntax:
+    content: double DeletionCost(char c)
+    parameters:
+    - id: c
+      type: System.Char
+      description: The character being deleted.
+    return:
+      type: System.Double
+      description: >-
+        The cost to be allocated to deleting the given character,
+            in the range [0, 1].
+    content.vb: Function DeletionCost(c As Char) As Double
+  overload: F23.StringSimilarity.ICharacterInsDel.DeletionCost*
+  nameWithType.vb: ICharacterInsDel.DeletionCost(Char)
+  fullName.vb: F23.StringSimilarity.ICharacterInsDel.DeletionCost(Char)
+  name.vb: DeletionCost(Char)
+- uid: F23.StringSimilarity.ICharacterInsDel.InsertionCost(System.Char)
+  commentId: M:F23.StringSimilarity.ICharacterInsDel.InsertionCost(System.Char)
+  id: InsertionCost(System.Char)
+  parent: F23.StringSimilarity.ICharacterInsDel
+  langs:
+  - csharp
+  - vb
+  name: InsertionCost(char)
+  nameWithType: ICharacterInsDel.InsertionCost(char)
+  fullName: F23.StringSimilarity.ICharacterInsDel.InsertionCost(char)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/ICharacterInsDel.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: InsertionCost
+    path: src/F23.StringSimilarity/ICharacterInsDel.cs
+    startLine: 23
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity
+  summary: Computes the insertion cost.
+  example: []
+  syntax:
+    content: double InsertionCost(char c)
+    parameters:
+    - id: c
+      type: System.Char
+      description: The character being inserted.
+    return:
+      type: System.Double
+      description: >-
+        The cost to be allocated to inserting the given character,
+            in the range [0, 1].
+    content.vb: Function InsertionCost(c As Char) As Double
+  overload: F23.StringSimilarity.ICharacterInsDel.InsertionCost*
+  nameWithType.vb: ICharacterInsDel.InsertionCost(Char)
+  fullName.vb: F23.StringSimilarity.ICharacterInsDel.InsertionCost(Char)
+  name.vb: InsertionCost(Char)
+references:
+- uid: F23.StringSimilarity.ICharacterSubstitution
+  commentId: T:F23.StringSimilarity.ICharacterSubstitution
+  parent: F23.StringSimilarity
+  href: F23.StringSimilarity.ICharacterSubstitution.html
+  name: ICharacterSubstitution
+  nameWithType: ICharacterSubstitution
+  fullName: F23.StringSimilarity.ICharacterSubstitution
+- uid: F23.StringSimilarity
+  commentId: N:F23.StringSimilarity
+  href: F23.html
+  name: F23.StringSimilarity
+  nameWithType: F23.StringSimilarity
+  fullName: F23.StringSimilarity
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+- uid: F23.StringSimilarity.ICharacterInsDel.DeletionCost*
+  commentId: Overload:F23.StringSimilarity.ICharacterInsDel.DeletionCost
+  href: F23.StringSimilarity.ICharacterInsDel.html#F23_StringSimilarity_ICharacterInsDel_DeletionCost_System_Char_
+  name: DeletionCost
+  nameWithType: ICharacterInsDel.DeletionCost
+  fullName: F23.StringSimilarity.ICharacterInsDel.DeletionCost
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: F23.StringSimilarity.ICharacterInsDel.InsertionCost*
+  commentId: Overload:F23.StringSimilarity.ICharacterInsDel.InsertionCost
+  href: F23.StringSimilarity.ICharacterInsDel.html#F23_StringSimilarity_ICharacterInsDel_InsertionCost_System_Char_
+  name: InsertionCost
+  nameWithType: ICharacterInsDel.InsertionCost
+  fullName: F23.StringSimilarity.ICharacterInsDel.InsertionCost

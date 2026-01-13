@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.ISpanSimilarity
+  id: ISpanSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  children:
+  - F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  langs:
+  - csharp
+  - vb
+  name: ISpanSimilarity
+  nameWithType: ISpanSimilarity
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity
+  type: Interface
+  source:
+    remote:
+      path: src/F23.StringSimilarity/Interfaces/ISpanSimilarity.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: ISpanSimilarity
+    path: src/F23.StringSimilarity/Interfaces/ISpanSimilarity.cs
+    startLine: 4
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity.Interfaces
+  syntax:
+    content: public interface ISpanSimilarity
+    content.vb: Public Interface ISpanSimilarity
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  commentId: M:F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  id: Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  parent: F23.StringSimilarity.Interfaces.ISpanSimilarity
+  langs:
+  - csharp
+  - vb
+  name: Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: ISpanSimilarity.Similarity<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  type: Method
+  source:
+    remote:
+      path: src/F23.StringSimilarity/Interfaces/ISpanSimilarity.cs
+      branch: chore/49-generate-docfx-doc-site
+      repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
+    id: Similarity
+    path: src/F23.StringSimilarity/Interfaces/ISpanSimilarity.cs
+    startLine: 12
+  assemblies:
+  - F23.StringSimilarity
+  namespace: F23.StringSimilarity.Interfaces
+  summary: Compute and return a measure of similarity between 2 spans.
+  example: []
+  syntax:
+    content: 'double Similarity<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
+    parameters:
+    - id: s1
+      type: System.ReadOnlySpan{{T}}
+      description: The first span
+    - id: s2
+      type: System.ReadOnlySpan{{T}}
+      description: The second span
+    typeParameters:
+    - id: T
+    return:
+      type: System.Double
+      description: Similarity (0 means both spans are completely different)
+    content.vb: Function Similarity(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
+  overload: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity*
+  nameWithType.vb: ISpanSimilarity.Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+references:
+- uid: F23.StringSimilarity.Interfaces
+  commentId: N:F23.StringSimilarity.Interfaces
+  href: F23.html
+  name: F23.StringSimilarity.Interfaces
+  nameWithType: F23.StringSimilarity.Interfaces
+  fullName: F23.StringSimilarity.Interfaces
+  spec.csharp:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+  spec.vb:
+  - uid: F23
+    name: F23
+    href: F23.html
+  - name: .
+  - uid: F23.StringSimilarity
+    name: StringSimilarity
+    href: F23.StringSimilarity.html
+  - name: .
+  - uid: F23.StringSimilarity.Interfaces
+    name: Interfaces
+    href: F23.StringSimilarity.Interfaces.html
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity*
+  commentId: Overload:F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity
+  href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html#F23_StringSimilarity_Interfaces_ISpanSimilarity_Similarity__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  name: Similarity
+  nameWithType: ISpanSimilarity.Similarity
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity
+- uid: System.ReadOnlySpan{{T}}
+  commentId: T:System.ReadOnlySpan{``0}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
