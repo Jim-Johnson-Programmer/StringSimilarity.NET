@@ -27,8 +27,17 @@ using System.Linq;
 
 namespace F23.StringSimilarity.Support
 {
+    /// <summary>
+    /// Provides extension methods for working with arrays.
+    /// </summary>
+    /// <remarks>This class contains utility methods that extend the functionality of arrays, enabling
+    /// additional operations such as creating a padded version of an array. These methods are designed to simplify
+    /// common array manipulation tasks.</remarks>
     internal static class ArrayExtensions
     {
+        /// <summary>
+        /// Creates a new array by padding the source array to the specified final length with the given padding value.
+        /// </summary>
         internal static T[] WithPadding<T>(this T[] source, int finalLength, T paddingValue = default(T))
         {
             if (finalLength < source.Length)
