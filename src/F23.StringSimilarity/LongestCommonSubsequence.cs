@@ -61,7 +61,7 @@ namespace F23.StringSimilarity
         /// <exception cref="ArgumentNullException">If s1 or s2 is null.</exception>
         public double Distance(string s1, string s2)
             => Distance(s1.AsSpan(), s2.AsSpan());
-        
+
         /// <summary>
         /// Calculates the distance between two sequences based on their similarity.
         /// </summary>
@@ -104,7 +104,7 @@ namespace F23.StringSimilarity
         /// <exception cref="ArgumentNullException">If s1 or s2 is null.</exception>
         public int Length(string s1, string s2)
             => Length(s1.AsSpan(), s2.AsSpan());
-        
+
         internal static int Length<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2)
             where T : IEquatable<T>
         {
