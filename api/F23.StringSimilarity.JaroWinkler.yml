@@ -25,10 +25,26 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: JaroWinkler
     path: src/F23.StringSimilarity/JaroWinkler.cs
-    startLine: 41
+    startLine: 43
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: >-
+    The Jaro–Winkler distance metric is designed and best suited for short
+
+    strings such as person names, and to detect typos; it is (roughly) a
+
+    variation of Damerau-Levenshtein, where the substitution of 2 close
+
+    characters is considered less important then the substitution of 2 characters
+
+    that a far from each other.
+
+    Jaro-Winkler was developed in the area of record linkage (duplicate
+
+    detection) (Winkler, 1990). It returns a value in the interval [0.0, 1.0].
+
+    The distance is computed as 1 - Jaro-Winkler similarity.
   example: []
   syntax:
     content: 'public class JaroWinkler : INormalizedStringSimilarity, IStringSimilarity, INormalizedStringDistance, IStringDistance, INormalizedSpanSimilarity, ISpanSimilarity, INormalizedSpanDistance, ISpanDistance'
@@ -70,7 +86,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/JaroWinkler.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -101,7 +117,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/JaroWinkler.cs
-    startLine: 65
+    startLine: 67
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -139,7 +155,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Similarity
     path: src/F23.StringSimilarity/JaroWinkler.cs
-    startLine: 77
+    startLine: 79
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -186,28 +202,39 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Similarity
     path: src/F23.StringSimilarity/JaroWinkler.cs
-    startLine: 80
+    startLine: 94
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
-  summary: Compute and return a measure of similarity between 2 spans.
+  summary: Calculates the similarity between two sequences using the Jaro-Winkler distance metric.
+  remarks: >-
+    The similarity is calculated using the Jaro-Winkler distance, which is a measure of
+        similarity between two sequences. The result is adjusted based on common prefixes to give higher scores to
+        sequences that share a common prefix.
   example: []
   syntax:
     content: 'public double Similarity<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
     parameters:
     - id: s1
       type: System.ReadOnlySpan{{T}}
-      description: The first span
+      description: The first sequence to compare. Cannot be null.
     - id: s2
       type: System.ReadOnlySpan{{T}}
-      description: The second span
+      description: The second sequence to compare. Cannot be null.
     typeParameters:
     - id: T
+      description: The type of elements in the sequences. Must implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Double
-      description: Similarity (0 means both spans are completely different)
+      description: >-
+        A value between 0 and 1 representing the similarity between the two sequences, where 1 indicates identical
+            sequences and 0 indicates no similarity.
     content.vb: Public Function Similarity(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
   overload: F23.StringSimilarity.JaroWinkler.Similarity*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">s1</code> or <code class="paramref">s2</code> is null.
   implements:
   - F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   nameWithType.vb: JaroWinkler.Similarity(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
@@ -231,7 +258,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/JaroWinkler.cs
-    startLine: 122
+    startLine: 136
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -278,38 +305,32 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/JaroWinkler.cs
-    startLine: 125
+    startLine: 149
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
-  summary: >-
-    Compute and return a measure of distance.
-
-    Must be &gt;= 0.
-
-
-    This method operates on spans such as byte arrays.
-
-    Note that, when used on bytes, string encodings that
-
-    use more than one byte per codepoint (such as UTF-8)
-
-    are not supported and will most likely return
-
-    incorrect results.
+  summary: Calculates the distance between two sequences based on their similarity.
+  remarks: >-
+    The distance is calculated as the complement of the similarity between the two
+        sequences.
   example: []
   syntax:
     content: 'public double Distance<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
     parameters:
     - id: s1
       type: System.ReadOnlySpan{{T}}
+      description: The first sequence to compare.
     - id: s2
       type: System.ReadOnlySpan{{T}}
+      description: The second sequence to compare.
     typeParameters:
     - id: T
+      description: The type of elements in the sequences. Must implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Double
-      description: The measure of distance between the spans.
+      description: >-
+        A double value representing the distance between the two sequences. The value ranges from 0.0 to 1.0,  where
+            0.0 indicates identical sequences and 1.0 indicates completely dissimilar sequences.
     content.vb: Public Function Distance(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
   overload: F23.StringSimilarity.JaroWinkler.Distance*
   implements:
@@ -750,6 +771,34 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   commentId: M:F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
   parent: F23.StringSimilarity.Interfaces.ISpanSimilarity

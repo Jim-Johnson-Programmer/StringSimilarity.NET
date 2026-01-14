@@ -23,10 +23,14 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: WeightedLevenshtein
     path: src/F23.StringSimilarity/WeightedLevenshtein.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: >-
+    Implementation of Levenshtein that allows to define different weights for
+
+    different character substitutions.
   example: []
   syntax:
     content: 'public class WeightedLevenshtein : IStringDistance'
@@ -61,7 +65,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/WeightedLevenshtein.cs
-    startLine: 44
+    startLine: 46
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -96,7 +100,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/WeightedLevenshtein.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -137,7 +141,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/WeightedLevenshtein.cs
-    startLine: 68
+    startLine: 70
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -180,7 +184,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/WeightedLevenshtein.cs
-    startLine: 85
+    startLine: 87
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity

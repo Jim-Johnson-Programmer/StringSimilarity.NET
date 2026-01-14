@@ -19,10 +19,12 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: INormalizedSpanDistance
     path: src/F23.StringSimilarity/Interfaces/INormalizedSpanDistance.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity.Interfaces
+  summary: An interface for normalized distance measures that operate on spans.
+  example: []
   syntax:
     content: 'public interface INormalizedSpanDistance : ISpanDistance'
     content.vb: Public Interface INormalizedSpanDistance Inherits ISpanDistance

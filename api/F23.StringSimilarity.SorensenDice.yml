@@ -23,10 +23,14 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: SorensenDice
     path: src/F23.StringSimilarity/SorensenDice.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: >-
+    Similar to Jaccard index, but this time the similarity is computed as 2 * |V1
+
+    inter V2| / (|V1| + |V2|). Distance is computed as 1 - cosine similarity.
   example: []
   syntax:
     content: 'public class SorensenDice : ShingleBased, INormalizedStringDistance, IStringDistance, INormalizedStringSimilarity, IStringSimilarity'
@@ -67,7 +71,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/SorensenDice.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -114,7 +118,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/SorensenDice.cs
-    startLine: 58
+    startLine: 59
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -159,7 +163,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Similarity
     path: src/F23.StringSimilarity/SorensenDice.cs
-    startLine: 67
+    startLine: 68
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -206,7 +210,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/SorensenDice.cs
-    startLine: 109
+    startLine: 110
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity

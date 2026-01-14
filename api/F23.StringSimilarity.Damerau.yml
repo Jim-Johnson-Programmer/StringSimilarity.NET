@@ -135,26 +135,41 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/Damerau.cs
-    startLine: 58
+    startLine: 74
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
-  summary: Compute and return the metric distance.
+  summary: Calculates the Damerau-Levenshtein distance between two sequences.
+  remarks: >-
+    The Damerau-Levenshtein distance is a metric for measuring the edit distance between
+        two sequences, allowing for the following operations: <ul><li>Insertion of a
+        single element.</li><li>Deletion of a single element.</li><li>Substitution of one element for another.</li><li>Transposition of two adjacent elements.</li></ul> This method is
+        case-sensitive for sequences of strings or characters.
   example: []
   syntax:
     content: 'public double Distance<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
     parameters:
     - id: s1
       type: System.ReadOnlySpan{{T}}
+      description: The first sequence to compare. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     - id: s2
       type: System.ReadOnlySpan{{T}}
+      description: The second sequence to compare. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
     typeParameters:
     - id: T
+      description: The type of elements in the sequences. Must implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Double
-      description: The metric distance.
+      description: >-
+        The Damerau-Levenshtein distance between the two sequences, which represents the minimum number of operations
+            (insertions, deletions, substitutions, or transpositions) required to transform one sequence into the other.
+            Returns 0 if the sequences are equal.
     content.vb: Public Function Distance(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
   overload: F23.StringSimilarity.Damerau.Distance*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">s1</code> or <code class="paramref">s2</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   - F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
@@ -600,6 +615,34 @@ references:
   nameWithType.vb: Double
   fullName.vb: Double
   name.vb: Double
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   commentId: M:F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
   parent: F23.StringSimilarity.Interfaces.IMetricSpanDistance

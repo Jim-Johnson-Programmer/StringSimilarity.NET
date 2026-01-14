@@ -20,10 +20,12 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: IStringSimilarity
     path: src/F23.StringSimilarity/Interfaces/IStringSimilarity.cs
-    startLine: 26
+    startLine: 29
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity.Interfaces
+  summary: Interface for string similarity algorithms
+  example: []
   syntax:
     content: public interface IStringSimilarity
     content.vb: Public Interface IStringSimilarity
@@ -45,7 +47,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Similarity
     path: src/F23.StringSimilarity/Interfaces/IStringSimilarity.cs
-    startLine: 34
+    startLine: 37
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity.Interfaces

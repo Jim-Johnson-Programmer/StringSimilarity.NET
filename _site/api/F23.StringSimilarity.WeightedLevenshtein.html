@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class WeightedLevenshtein | StringSimilarity.NET API Documentation ">
       
-      
+      <meta name="description" content="Implementation of Levenshtein that allows to define different weights for different character substitutions.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="F23_StringSimilarity_WeightedLevenshtein" data-uid="F23.StringSimilarity.WeightedLevenshtein" class="text-break">
-Class WeightedLevenshtein  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L36"><i class="bi bi-code-slash"></i></a>
+Class WeightedLevenshtein  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class WeightedLevenshtein  <a class="header-action link-secondary" title="View s
   <dl><dt>Assembly</dt><dd>F23.StringSimilarity.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Implementation of Levenshtein that allows to define different weights for
+different character substitutions.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -162,7 +164,7 @@ Class WeightedLevenshtein  <a class="header-action link-secondary" title="View s
 
   <h3 id="F23_StringSimilarity_WeightedLevenshtein__ctor_F23_StringSimilarity_ICharacterSubstitution_" data-uid="F23.StringSimilarity.WeightedLevenshtein.#ctor(F23.StringSimilarity.ICharacterSubstitution)">
   WeightedLevenshtein(ICharacterSubstitution)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Instantiate with provided character substitution.</p>
@@ -195,7 +197,7 @@ Class WeightedLevenshtein  <a class="header-action link-secondary" title="View s
 
   <h3 id="F23_StringSimilarity_WeightedLevenshtein__ctor_F23_StringSimilarity_ICharacterSubstitution_F23_StringSimilarity_ICharacterInsDel_" data-uid="F23.StringSimilarity.WeightedLevenshtein.#ctor(F23.StringSimilarity.ICharacterSubstitution,F23.StringSimilarity.ICharacterInsDel)">
   WeightedLevenshtein(ICharacterSubstitution, ICharacterInsDel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Instantiate with provided character substitution, insertion, and
@@ -236,7 +238,7 @@ deletion weights.</p>
 
   <h3 id="F23_StringSimilarity_WeightedLevenshtein_Distance_System_String_System_String_" data-uid="F23.StringSimilarity.WeightedLevenshtein.Distance(System.String,System.String)">
   Distance(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Equivalent to Distance(s1, s2, Double.MaxValue).</p>
@@ -278,7 +280,7 @@ deletion weights.</p>
 
   <h3 id="F23_StringSimilarity_WeightedLevenshtein_Distance_System_String_System_String_System_Double_" data-uid="F23.StringSimilarity.WeightedLevenshtein.Distance(System.String,System.String,System.Double)">
   Distance(string, string, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compute Levenshtein distance using provided weights for substitution.</p>
@@ -333,7 +335,7 @@ calculation to completion in every case.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L36" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/WeightedLevenshtein.cs/#L38" class="edit-link">Edit this page</a>
         </div>
 
 

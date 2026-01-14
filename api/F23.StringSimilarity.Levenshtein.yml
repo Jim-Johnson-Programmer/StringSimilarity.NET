@@ -23,10 +23,16 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Levenshtein
     path: src/F23.StringSimilarity/Levenshtein.cs
-    startLine: 34
+    startLine: 36
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: >-
+    The Levenshtein distance between two words is the Minimum number of
+
+    single-character edits (insertions, deletions or substitutions) required to
+
+    change one string into the other.
   example: []
   syntax:
     content: 'public class Levenshtein : IMetricStringDistance, IStringDistance, IMetricSpanDistance, ISpanDistance'
@@ -64,7 +70,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/Levenshtein.cs
-    startLine: 42
+    startLine: 44
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -108,7 +114,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/Levenshtein.cs
-    startLine: 73
+    startLine: 75
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -193,24 +199,32 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/Levenshtein.cs
-    startLine: 76
+    startLine: 88
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
-  summary: Compute and return the metric distance.
+  summary: Calculates the distance between two sequences of elements.
+  remarks: >-
+    This method uses a default maximum threshold for the distance calculation. For custom
+        thresholds, use an overload         that accepts a threshold parameter.
   example: []
   syntax:
     content: 'public double Distance<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
     parameters:
     - id: s1
       type: System.ReadOnlySpan{{T}}
+      description: The first sequence to compare.
     - id: s2
       type: System.ReadOnlySpan{{T}}
+      description: The second sequence to compare.
     typeParameters:
     - id: T
+      description: The type of elements in the sequences. Must implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Double
-      description: The metric distance.
+      description: >-
+        A <xref href="System.Double" data-throw-if-not-resolved="false"></xref> representing the distance between the two sequences. The specific meaning of the
+            distance         depends on the implementation of the comparison logic.
     content.vb: Public Function Distance(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
   overload: F23.StringSimilarity.Levenshtein.Distance*
   implements:
@@ -237,25 +251,42 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/Levenshtein.cs
-    startLine: 80
+    startLine: 107
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: Calculates the edit distance (Levenshtein distance) between two sequences, with an optional upper limit.
+  remarks: >-
+    The edit distance is a measure of the minimum number of single-element edits
+        (insertions, deletions, or substitutions) required to transform one sequence into the other. This method is
+        optimized to stop processing early if the distance exceeds the specified <code class="paramref">limit</code>.
+  example: []
   syntax:
     content: 'public double Distance<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2, int limit) where T : IEquatable<T>'
     parameters:
     - id: s1
       type: System.ReadOnlySpan{{T}}
+      description: The first sequence to compare. Cannot be null.
     - id: s2
       type: System.ReadOnlySpan{{T}}
+      description: The second sequence to compare. Cannot be null.
     - id: limit
       type: System.Int32
+      description: The maximum distance to calculate. If the edit distance exceeds this value, the method returns <code class="paramref">limit</code>.
     typeParameters:
     - id: T
+      description: The type of elements in the sequences. The type must implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Double
+      description: >-
+        The edit distance between <code class="paramref">s1</code> and <code class="paramref">s2</code>. If the sequences are identical,
+            the result is 0. If the distance exceeds <code class="paramref">limit</code>, the method returns <code class="paramref">limit</code>.
     content.vb: Public Function Distance(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T), limit As Integer) As Double
   overload: F23.StringSimilarity.Levenshtein.Distance*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">s1</code> or <code class="paramref">s2</code> is null.
   nameWithType.vb: Levenshtein.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T), Integer)
   fullName.vb: F23.StringSimilarity.Levenshtein.Distance(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T), Integer)
   name.vb: Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T), Integer)
@@ -709,6 +740,34 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   commentId: M:F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
   parent: F23.StringSimilarity.Interfaces.IMetricSpanDistance

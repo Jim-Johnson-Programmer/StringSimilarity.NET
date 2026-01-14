@@ -23,10 +23,22 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: QGram
     path: src/F23.StringSimilarity/QGram.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: >-
+    Q-gram distance, as defined by Ukkonen in "Approximate string-matching with
+
+    q-grams and maximal matches". The distance between two strings is defined as
+
+    the L1 norm of the difference of their profiles (the number of occurences of
+
+    each n-gram): SUM( |V1_i - V2_i| ). Q-gram distance is a lower bound on
+
+    Levenshtein distance, but can be computed in O(m + n), where Levenshtein
+
+    requires O(m.n).
   example: []
   syntax:
     content: 'public class QGram : ShingleBased, IStringDistance'
@@ -64,7 +76,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/QGram.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -112,7 +124,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/QGram.cs
-    startLine: 60
+    startLine: 61
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -158,7 +170,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/QGram.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -208,7 +220,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/QGram.cs
-    startLine: 99
+    startLine: 100
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity

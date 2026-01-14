@@ -19,10 +19,12 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: INormalizedStringDistance
     path: src/F23.StringSimilarity/Interfaces/INormalizedStringDistance.cs
-    startLine: 26
+    startLine: 29
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity.Interfaces
+  summary: Interface for normalized string distance algorithms
+  example: []
   syntax:
     content: 'public interface INormalizedStringDistance : IStringDistance'
     content.vb: Public Interface INormalizedStringDistance Inherits IStringDistance

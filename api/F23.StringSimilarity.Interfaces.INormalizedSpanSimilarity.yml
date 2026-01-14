@@ -19,16 +19,28 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: INormalizedSpanSimilarity
     path: src/F23.StringSimilarity/Interfaces/INormalizedSpanSimilarity.cs
-    startLine: 2
+    startLine: 7
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity.Interfaces
+  summary: Defines a contract for calculating the similarity between spans of text, normalized to a range of 0 to 1.
+  remarks: >-
+    This interface extends <xref href="F23.StringSimilarity.Interfaces.ISpanSimilarity" data-throw-if-not-resolved="false"></xref> by ensuring that similarity scores are
+        normalized. A score of 0 indicates no similarity, while a score of 1 indicates identical spans.
+  example: []
   syntax:
     content: 'public interface INormalizedSpanSimilarity : ISpanSimilarity'
     content.vb: Public Interface INormalizedSpanSimilarity Inherits ISpanSimilarity
   inheritedMembers:
   - F23.StringSimilarity.Interfaces.ISpanSimilarity.Similarity``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
 references:
+- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity
+  commentId: T:F23.StringSimilarity.Interfaces.ISpanSimilarity
+  parent: F23.StringSimilarity.Interfaces
+  href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html
+  name: ISpanSimilarity
+  nameWithType: ISpanSimilarity
+  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity
 - uid: F23.StringSimilarity.Interfaces
   commentId: N:F23.StringSimilarity.Interfaces
   href: F23.html
@@ -192,10 +204,3 @@ references:
   - name: T
   - name: )
   - name: )
-- uid: F23.StringSimilarity.Interfaces.ISpanSimilarity
-  commentId: T:F23.StringSimilarity.Interfaces.ISpanSimilarity
-  parent: F23.StringSimilarity.Interfaces
-  href: F23.StringSimilarity.Interfaces.ISpanSimilarity.html
-  name: ISpanSimilarity
-  nameWithType: ISpanSimilarity
-  fullName: F23.StringSimilarity.Interfaces.ISpanSimilarity

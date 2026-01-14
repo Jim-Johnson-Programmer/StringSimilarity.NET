@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class LongestCommonSubsequence | StringSimilarity.NET API Documentation ">
       
-      
+      <meta name="description" content="The longest common subsequence (LCS) problem consists in finding the longest subsequence common to two (or more) sequences. It differs from problems of finding common substrings: unlike substrings, subsequences are not required to occupy consecutive positions within the original sequences. It is used by the diff utility, by Git for reconciling multiple changes, etc. The LCS distance between Strings X (length n) and Y (length m) is n + m - 2 |LCS(X, Y)| min = 0 max = n + m LCS distance is equivalent to Levenshtein distance, when only insertion and deletion is allowed (no substitution), or when the cost of the substitution is the double of the cost of an insertion or deletion. ! This class currently implements the dynamic programming approach, which has a space requirement O(m * n)!">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="F23_StringSimilarity_LongestCommonSubsequence" data-uid="F23.StringSimilarity.LongestCommonSubsequence" class="text-break">
-Class LongestCommonSubsequence  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L47"><i class="bi bi-code-slash"></i></a>
+Class LongestCommonSubsequence  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,19 @@ Class LongestCommonSubsequence  <a class="header-action link-secondary" title="V
   <dl><dt>Assembly</dt><dd>F23.StringSimilarity.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The longest common subsequence (LCS) problem consists in finding the longest
+subsequence common to two (or more) sequences. It differs from problems of
+finding common substrings: unlike substrings, subsequences are not required
+to occupy consecutive positions within the original sequences.</p>
+<p>It is used by the diff utility, by Git for reconciling multiple changes, etc.</p>
+<p>The LCS distance between Strings X (length n) and Y (length m) is n + m - 2
+|LCS(X, Y)| min = 0 max = n + m</p>
+<p>LCS distance is equivalent to Levenshtein distance, when only insertion and
+deletion is allowed (no substitution), or when the cost of the substitution
+is the double of the cost of an insertion or deletion.</p>
+<p>! This class currently implements the dynamic programming approach, which has
+a space requirement O(m * n)!</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -163,7 +175,7 @@ Class LongestCommonSubsequence  <a class="header-action link-secondary" title="V
 
   <h3 id="F23_StringSimilarity_LongestCommonSubsequence_Distance_System_String_System_String_" data-uid="F23.StringSimilarity.LongestCommonSubsequence.Distance(System.String,System.String)">
   Distance(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Return the LCS distance between strings s1 and s2, computed as |s1| +
@@ -213,16 +225,10 @@ Class LongestCommonSubsequence  <a class="header-action link-secondary" title="V
 
   <h3 id="F23_StringSimilarity_LongestCommonSubsequence_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__" data-uid="F23.StringSimilarity.LongestCommonSubsequence.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})">
   Distance&lt;T&gt;(ReadOnlySpan&lt;T&gt;, ReadOnlySpan&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compute and return a measure of distance.
-Must be &gt;= 0.</p>
-<p>This method operates on spans such as byte arrays.
-Note that, when used on bytes, string encodings that
-use more than one byte per codepoint (such as UTF-8)
-are not supported and will most likely return
-incorrect results.</p>
+  <div class="markdown level1 summary"><p>Calculates the distance between two sequences based on their similarity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -233,22 +239,26 @@ incorrect results.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>s1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The first sequence to compare. Cannot be empty or null.</p>
+</dd>
     <dt><code>s2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The second sequence to compare. Cannot be empty or null.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd><p>The measure of distance between the spans.</p>
+    <dd><p>A non-negative <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> representing the distance between the two sequences.  Returns 0 if the
+sequences are identical.</p>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of elements in the sequences. Must implement <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>.</p>
+</dd>
   </dl>
 
 
@@ -256,7 +266,17 @@ incorrect results.</p>
 
 
 
+  <h4 class="section" id="F23_StringSimilarity_LongestCommonSubsequence_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The distance is calculated as the sum of the lengths of the two sequences minus twice
+the length of their longest common subsequence.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">s1</code> or <code class="paramref">s2</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -264,7 +284,7 @@ incorrect results.</p>
 
   <h3 id="F23_StringSimilarity_LongestCommonSubsequence_Length_System_String_System_String_" data-uid="F23.StringSimilarity.LongestCommonSubsequence.Length(System.String,System.String)">
   Length(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Return the length of Longest Common Subsequence (LCS) between strings s1
@@ -313,7 +333,7 @@ and s2.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L47" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/LongestCommonSubsequence.cs/#L49" class="edit-link">Edit this page</a>
         </div>
 
 

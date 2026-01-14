@@ -124,15 +124,38 @@ Jaccard index is a metric distance.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.JaroWinkler.html">JaroWinkler</a></dt>
-      <dd></dd>
+      <dd><p>The Jaro–Winkler distance metric is designed and best suited for short
+strings such as person names, and to detect typos; it is (roughly) a
+variation of Damerau-Levenshtein, where the substitution of 2 close
+characters is considered less important then the substitution of 2 characters
+that a far from each other.
+Jaro-Winkler was developed in the area of record linkage (duplicate
+detection) (Winkler, 1990). It returns a value in the interval [0.0, 1.0].
+The distance is computed as 1 - Jaro-Winkler similarity.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.Levenshtein.html">Levenshtein</a></dt>
-      <dd></dd>
+      <dd><p>The Levenshtein distance between two words is the Minimum number of
+single-character edits (insertions, deletions or substitutions) required to
+change one string into the other.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.LongestCommonSubsequence.html">LongestCommonSubsequence</a></dt>
-      <dd></dd>
+      <dd><p>The longest common subsequence (LCS) problem consists in finding the longest
+subsequence common to two (or more) sequences. It differs from problems of
+finding common substrings: unlike substrings, subsequences are not required
+to occupy consecutive positions within the original sequences.</p>
+<p>It is used by the diff utility, by Git for reconciling multiple changes, etc.</p>
+<p>The LCS distance between Strings X (length n) and Y (length m) is n + m - 2
+|LCS(X, Y)| min = 0 max = n + m</p>
+<p>LCS distance is equivalent to Levenshtein distance, when only insertion and
+deletion is allowed (no substitution), or when the cost of the substitution
+is the double of the cost of an insertion or deletion.</p>
+<p>! This class currently implements the dynamic programming approach, which has
+a space requirement O(m * n)!</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.MetricLCS.html">MetricLCS</a></dt>
@@ -153,15 +176,29 @@ total similarity score the original length of the longest word.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.NormalizedLevenshtein.html">NormalizedLevenshtein</a></dt>
-      <dd></dd>
+      <dd><p>This distance is computed as levenshtein distance divided by the length of
+the longest string. The resulting value is always in the interval [0.0 1.0]
+but it is not a metric anymore! The similarity is computed as 1 - normalized
+distance.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.OptimalStringAlignment.html">OptimalStringAlignment</a></dt>
-      <dd></dd>
+      <dd><p>Provides an implementation of the Optimal String Alignment (OSA) distance algorithm,  which calculates the
+minimum number of operations required to transform one string  into another. Supported operations include
+insertion, deletion, substitution of a  single character, and transposition of two adjacent characters, with the
+constraint  that no substring is edited more than once.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.QGram.html">QGram</a></dt>
-      <dd></dd>
+      <dd><p>Q-gram distance, as defined by Ukkonen in &quot;Approximate string-matching with
+q-grams and maximal matches&quot;. The distance between two strings is defined as
+the L1 norm of the difference of their profiles (the number of occurences of
+each n-gram): SUM( |V1_i - V2_i| ). Q-gram distance is a lower bound on
+Levenshtein distance, but can be computed in O(m + n), where Levenshtein
+requires O(m.n).</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.RatcliffObershelp.html">RatcliffObershelp</a></dt>
@@ -180,15 +217,20 @@ Ported back to .NET by paulirwin to retain compatibility with upstream Java proj
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.ShingleBased.html">ShingleBased</a></dt>
-      <dd></dd>
+      <dd><p>Base class for shingle based algorithms.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.SorensenDice.html">SorensenDice</a></dt>
-      <dd></dd>
+      <dd><p>Similar to Jaccard index, but this time the similarity is computed as 2 * |V1
+inter V2| / (|V1| + |V2|). Distance is computed as 1 - cosine similarity.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.WeightedLevenshtein.html">WeightedLevenshtein</a></dt>
-      <dd></dd>
+      <dd><p>Implementation of Levenshtein that allows to define different weights for
+different character substitutions.</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces
@@ -202,7 +244,12 @@ character.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="F23.StringSimilarity.ICharacterSubstitution.html">ICharacterSubstitution</a></dt>
-      <dd></dd>
+      <dd><p>Used to indicate the cost of character substitution.</p>
+<p>Cost should always be in [0.0 .. 1.0]
+For example, in an OCR application, cost('o', 'a') could be 0.4
+In a checkspelling application, cost('u', 'i') could be 0.4 because these are
+next to each other on the keyboard...</p>
+</dd>
     </dl>
 
 

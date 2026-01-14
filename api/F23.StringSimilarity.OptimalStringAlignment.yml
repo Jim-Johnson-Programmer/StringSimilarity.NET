@@ -21,10 +21,25 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: OptimalStringAlignment
     path: src/F23.StringSimilarity/OptimalStringAlignment.cs
-    startLine: 31
+    startLine: 42
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: >-
+    Provides an implementation of the Optimal String Alignment (OSA) distance algorithm,  which calculates the
+
+    minimum number of operations required to transform one string  into another. Supported operations include
+
+    insertion, deletion, substitution of a  single character, and transposition of two adjacent characters, with the
+
+    constraint  that no substring is edited more than once.
+  remarks: >-
+    This class is designed for use in scenarios where a measure of similarity or difference 
+        between two strings or spans is required. It supports both string and span-based inputs,  making it suitable for
+        high-performance applications where memory efficiency is important.  The OSA distance is particularly useful in
+        applications such as spell checking,  approximate string matching, and natural language processing, where
+        transpositions  (e.g., swapping two adjacent characters) are common errors.
+  example: []
   syntax:
     content: 'public sealed class OptimalStringAlignment : IStringDistance, ISpanDistance'
     content.vb: Public NotInheritable Class OptimalStringAlignment Implements IStringDistance, ISpanDistance
@@ -58,7 +73,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/OptimalStringAlignment.cs
-    startLine: 43
+    startLine: 54
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -112,40 +127,40 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/OptimalStringAlignment.cs
-    startLine: 46
+    startLine: 70
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
-  summary: >-
-    Compute and return a measure of distance.
-
-    Must be &gt;= 0.
-
-
-    This method operates on spans such as byte arrays.
-
-    Note that, when used on bytes, string encodings that
-
-    use more than one byte per codepoint (such as UTF-8)
-
-    are not supported and will most likely return
-
-    incorrect results.
+  summary: Calculates the Damerau-Levenshtein distance between two sequences.
+  remarks: >-
+    The Damerau-Levenshtein distance is a metric for measuring the difference between two
+        sequences. It  extends the Levenshtein distance by allowing transpositions of adjacent characters as a
+        single edit  operation. This method is case-sensitive for sequences of characters.
   example: []
   syntax:
     content: 'public double Distance<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
     parameters:
     - id: s1
       type: System.ReadOnlySpan{{T}}
+      description: The first sequence to compare. Cannot be null.
     - id: s2
       type: System.ReadOnlySpan{{T}}
+      description: The second sequence to compare. Cannot be null.
     typeParameters:
     - id: T
+      description: The type of elements in the sequences. The type must implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Double
-      description: The measure of distance between the spans.
+      description: >-
+        The Damerau-Levenshtein distance between the two sequences, which represents the minimum number of 
+            single-character edits (insertions, deletions, substitutions, or transpositions) required to transform  one
+            sequence into the other.
     content.vb: Public Function Distance(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
   overload: F23.StringSimilarity.OptimalStringAlignment.Distance*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">s1</code> or <code class="paramref">s2</code> is null.
   implements:
   - F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   nameWithType.vb: OptimalStringAlignment.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
@@ -509,6 +524,34 @@ references:
   nameWithType.vb: Double
   fullName.vb: Double
   name.vb: Double
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   commentId: M:F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
   parent: F23.StringSimilarity.Interfaces.ISpanDistance

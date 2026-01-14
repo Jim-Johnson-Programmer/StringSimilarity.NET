@@ -217,10 +217,10 @@ LCS-based string metric&quot; by Daniel Bakkelund.</p>
 
   <h3 id="F23_StringSimilarity_MetricLCS_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__" data-uid="F23.StringSimilarity.MetricLCS.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})">
   Distance&lt;T&gt;(ReadOnlySpan&lt;T&gt;, ReadOnlySpan&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/MetricLCS.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/MetricLCS.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compute and return the metric distance.</p>
+  <div class="markdown level1 summary"><p>Calculates the normalized distance between two sequences based on their longest common subsequence.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -231,22 +231,25 @@ LCS-based string metric&quot; by Daniel Bakkelund.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>s1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The first sequence to compare. Cannot be null.</p>
+</dd>
     <dt><code>s2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The second sequence to compare. Cannot be null.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd><p>The metric distance.</p>
+    <dd><p>A value between 0.0 and 1.0 representing the normalized distance between the two sequences: <ul><li>Returns 0.0 if the sequences are identical.</li><li>Returns 1.0 if the sequences have no common elements.</li><li>Returns a value between 0.0 and 1.0 for partial similarity.</li></ul>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of elements in the sequences. Must implement <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>.</p>
+</dd>
   </dl>
 
 
@@ -254,7 +257,18 @@ LCS-based string metric&quot; by Daniel Bakkelund.</p>
 
 
 
+  <h4 class="section" id="F23_StringSimilarity_MetricLCS_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The distance is calculated as: <pre><code class="lang-csharp">1.0 - (Length of Longest Common Subsequence /
+Maximum Length of the Two Sequences)</code></pre> This method is case-sensitive for sequences of strings or
+characters.
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">s1</code> or <code class="paramref">s2</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
 
 
 

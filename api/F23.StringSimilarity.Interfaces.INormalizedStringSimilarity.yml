@@ -19,10 +19,12 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: INormalizedStringSimilarity
     path: src/F23.StringSimilarity/Interfaces/INormalizedStringSimilarity.cs
-    startLine: 26
+    startLine: 29
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity.Interfaces
+  summary: Interface for normalized string similarity algorithms
+  example: []
   syntax:
     content: 'public interface INormalizedStringSimilarity : IStringSimilarity'
     content.vb: Public Interface INormalizedStringSimilarity Inherits IStringSimilarity

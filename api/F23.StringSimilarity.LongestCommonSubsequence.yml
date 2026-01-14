@@ -22,10 +22,38 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: LongestCommonSubsequence
     path: src/F23.StringSimilarity/LongestCommonSubsequence.cs
-    startLine: 46
+    startLine: 48
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: >-
+    The longest common subsequence (LCS) problem consists in finding the longest
+
+    subsequence common to two (or more) sequences. It differs from problems of
+
+    finding common substrings: unlike substrings, subsequences are not required
+
+    to occupy consecutive positions within the original sequences.
+
+
+    It is used by the diff utility, by Git for reconciling multiple changes, etc.
+
+
+    The LCS distance between Strings X (length n) and Y (length m) is n + m - 2
+
+    |LCS(X, Y)| min = 0 max = n + m
+
+
+    LCS distance is equivalent to Levenshtein distance, when only insertion and
+
+    deletion is allowed (no substitution), or when the cost of the substitution
+
+    is the double of the cost of an insertion or deletion.
+
+
+    ! This class currently implements the dynamic programming approach, which has
+
+    a space requirement O(m * n)!
   example: []
   syntax:
     content: 'public class LongestCommonSubsequence : IStringDistance, ISpanDistance'
@@ -61,7 +89,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/LongestCommonSubsequence.cs
-    startLine: 59
+    startLine: 61
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -114,40 +142,38 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/LongestCommonSubsequence.cs
-    startLine: 62
+    startLine: 75
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
-  summary: >-
-    Compute and return a measure of distance.
-
-    Must be &gt;= 0.
-
-
-    This method operates on spans such as byte arrays.
-
-    Note that, when used on bytes, string encodings that
-
-    use more than one byte per codepoint (such as UTF-8)
-
-    are not supported and will most likely return
-
-    incorrect results.
+  summary: Calculates the distance between two sequences based on their similarity.
+  remarks: >-
+    The distance is calculated as the sum of the lengths of the two sequences minus twice
+        the length of their longest common subsequence.
   example: []
   syntax:
     content: 'public double Distance<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
     parameters:
     - id: s1
       type: System.ReadOnlySpan{{T}}
+      description: The first sequence to compare. Cannot be empty or null.
     - id: s2
       type: System.ReadOnlySpan{{T}}
+      description: The second sequence to compare. Cannot be empty or null.
     typeParameters:
     - id: T
+      description: The type of elements in the sequences. Must implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Double
-      description: The measure of distance between the spans.
+      description: >-
+        A non-negative <xref href="System.Double" data-throw-if-not-resolved="false"></xref> representing the distance between the two sequences.  Returns 0 if the
+            sequences are identical.
     content.vb: Public Function Distance(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
   overload: F23.StringSimilarity.LongestCommonSubsequence.Distance*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">s1</code> or <code class="paramref">s2</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   nameWithType.vb: LongestCommonSubsequence.Distance(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
@@ -171,7 +197,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Length
     path: src/F23.StringSimilarity/LongestCommonSubsequence.cs
-    startLine: 91
+    startLine: 104
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -583,6 +609,34 @@ references:
   nameWithType.vb: Double
   fullName.vb: Double
   name.vb: Double
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   commentId: M:F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
   parent: F23.StringSimilarity.Interfaces.ISpanDistance

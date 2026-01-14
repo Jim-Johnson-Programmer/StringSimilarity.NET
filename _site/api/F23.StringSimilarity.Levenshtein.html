@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Levenshtein | StringSimilarity.NET API Documentation ">
       
-      
+      <meta name="description" content="The Levenshtein distance between two words is the Minimum number of single-character edits (insertions, deletions or substitutions) required to change one string into the other.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="F23_StringSimilarity_Levenshtein" data-uid="F23.StringSimilarity.Levenshtein" class="text-break">
-Class Levenshtein  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L35"><i class="bi bi-code-slash"></i></a>
+Class Levenshtein  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Class Levenshtein  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>F23.StringSimilarity.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The Levenshtein distance between two words is the Minimum number of
+single-character edits (insertions, deletions or substitutions) required to
+change one string into the other.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -165,7 +168,7 @@ Class Levenshtein  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="F23_StringSimilarity_Levenshtein_Distance_System_String_System_String_" data-uid="F23.StringSimilarity.Levenshtein.Distance(System.String,System.String)">
   Distance(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Equivalent to Distance(s1, s2, Int32.MaxValue).</p>
@@ -207,7 +210,7 @@ Class Levenshtein  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="F23_StringSimilarity_Levenshtein_Distance_System_String_System_String_System_Int32_" data-uid="F23.StringSimilarity.Levenshtein.Distance(System.String,System.String,System.Int32)">
   Distance(string, string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The Levenshtein distance, or edit distance, between two words is the
@@ -276,10 +279,10 @@ calculation to completion in every case.</p>
 
   <h3 id="F23_StringSimilarity_Levenshtein_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__" data-uid="F23.StringSimilarity.Levenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})">
   Distance&lt;T&gt;(ReadOnlySpan&lt;T&gt;, ReadOnlySpan&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compute and return the metric distance.</p>
+  <div class="markdown level1 summary"><p>Calculates the distance between two sequences of elements.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -290,22 +293,26 @@ calculation to completion in every case.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>s1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The first sequence to compare.</p>
+</dd>
     <dt><code>s2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The second sequence to compare.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd><p>The metric distance.</p>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> representing the distance between the two sequences. The specific meaning of the
+distance         depends on the implementation of the comparison logic.</p>
 </dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of elements in the sequences. Must implement <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>.</p>
+</dd>
   </dl>
 
 
@@ -313,6 +320,10 @@ calculation to completion in every case.</p>
 
 
 
+  <h4 class="section" id="F23_StringSimilarity_Levenshtein_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses a default maximum threshold for the distance calculation. For custom
+thresholds, use an overload         that accepts a threshold parameter.</p>
+</div>
 
 
 
@@ -321,10 +332,11 @@ calculation to completion in every case.</p>
 
   <h3 id="F23_StringSimilarity_Levenshtein_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__System_Int32_" data-uid="F23.StringSimilarity.Levenshtein.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32)">
   Distance&lt;T&gt;(ReadOnlySpan&lt;T&gt;, ReadOnlySpan&lt;T&gt;, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates the edit distance (Levenshtein distance) between two sequences, with an optional upper limit.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -334,23 +346,29 @@ calculation to completion in every case.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>s1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The first sequence to compare. Cannot be null.</p>
+</dd>
     <dt><code>s2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The second sequence to compare. Cannot be null.</p>
+</dd>
     <dt><code>limit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The maximum distance to calculate. If the edit distance exceeds this value, the method returns <code class="paramref">limit</code>.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>The edit distance between <code class="paramref">s1</code> and <code class="paramref">s2</code>. If the sequences are identical,
+the result is 0. If the distance exceeds <code class="paramref">limit</code>, the method returns <code class="paramref">limit</code>.</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of elements in the sequences. The type must implement <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>.</p>
+</dd>
   </dl>
 
 
@@ -358,7 +376,18 @@ calculation to completion in every case.</p>
 
 
 
+  <h4 class="section" id="F23_StringSimilarity_Levenshtein_Distance__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The edit distance is a measure of the minimum number of single-element edits
+(insertions, deletions, or substitutions) required to transform one sequence into the other. This method is
+optimized to stop processing early if the distance exceeds the specified <code class="paramref">limit</code>.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">s1</code> or <code class="paramref">s2</code> is null.</p>
+</dd>
+  </dl>
 
 
 
@@ -366,7 +395,7 @@ calculation to completion in every case.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L35" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/Levenshtein.cs/#L37" class="edit-link">Edit this page</a>
         </div>
 
 

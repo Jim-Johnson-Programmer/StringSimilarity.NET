@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ShingleBased | StringSimilarity.NET API Documentation ">
       
-      
+      <meta name="description" content="Base class for shingle based algorithms.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="F23_StringSimilarity_ShingleBased" data-uid="F23.StringSimilarity.ShingleBased" class="text-break">
-Class ShingleBased  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L31"><i class="bi bi-code-slash"></i></a>
+Class ShingleBased  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ShingleBased  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>F23.StringSimilarity.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Base class for shingle based algorithms.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -165,10 +166,11 @@ Class ShingleBased  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="F23_StringSimilarity_ShingleBased__ctor" data-uid="F23.StringSimilarity.ShingleBased.#ctor">
   ShingleBased()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="F23.StringSimilarity.ShingleBased.html">ShingleBased</a> class with the default shingle size.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -191,7 +193,7 @@ Class ShingleBased  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="F23_StringSimilarity_ShingleBased__ctor_System_Int32_" data-uid="F23.StringSimilarity.ShingleBased.#ctor(System.Int32)">
   ShingleBased(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -232,7 +234,7 @@ Class ShingleBased  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="F23_StringSimilarity_ShingleBased_k" data-uid="F23.StringSimilarity.ShingleBased.k">
   k
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Return k, the length of k-shingles (aka n-grams).</p>
@@ -268,10 +270,12 @@ Class ShingleBased  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="F23_StringSimilarity_ShingleBased_GetProfile_System_String_" data-uid="F23.StringSimilarity.ShingleBased.GetProfile(System.String)">
   GetProfile(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a profile of k-length substrings (shingles) from the specified string, along with their frequency
+of occurrence.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -281,13 +285,16 @@ Class ShingleBased  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The input string from which to generate the shingle profile. Cannot be null.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A dictionary where the keys are k-length substrings (shingles) extracted from the input string, and the
+values are the number of times each shingle appears.</p>
+</dd>
   </dl>
 
 
@@ -296,6 +303,11 @@ Class ShingleBased  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section" id="F23_StringSimilarity_ShingleBased_GetProfile_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method processes the input string by normalizing spaces and then extracting
+overlapping substrings of length k. The resulting dictionary provides a frequency count for each unique
+shingle.</p>
+</div>
 
 
 
@@ -304,7 +316,7 @@ Class ShingleBased  <a class="header-action link-secondary" title="View source" 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L31" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/ShingleBased.cs/#L34" class="edit-link">Edit this page</a>
         </div>
 
 

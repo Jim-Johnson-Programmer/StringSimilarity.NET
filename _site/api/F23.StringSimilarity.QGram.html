@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class QGram | StringSimilarity.NET API Documentation ">
       
-      
+      <meta name="description" content="Q-gram distance, as defined by Ukkonen in &amp;quot;Approximate string-matching with q-grams and maximal matches&amp;quot;. The distance between two strings is defined as the L1 norm of the difference of their profiles (the number of occurences of each n-gram): SUM( |V1_i - V2_i| ). Q-gram distance is a lower bound on Levenshtein distance, but can be computed in O(m + n), where Levenshtein requires O(m.n).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="F23_StringSimilarity_QGram" data-uid="F23.StringSimilarity.QGram" class="text-break">
-Class QGram  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L37"><i class="bi bi-code-slash"></i></a>
+Class QGram  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,13 @@ Class QGram  <a class="header-action link-secondary" title="View source" href="h
   <dl><dt>Assembly</dt><dd>F23.StringSimilarity.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Q-gram distance, as defined by Ukkonen in &quot;Approximate string-matching with
+q-grams and maximal matches&quot;. The distance between two strings is defined as
+the L1 norm of the difference of their profiles (the number of occurences of
+each n-gram): SUM( |V1_i - V2_i| ). Q-gram distance is a lower bound on
+Levenshtein distance, but can be computed in O(m + n), where Levenshtein
+requires O(m.n).</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -169,7 +175,7 @@ Class QGram  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="F23_StringSimilarity_QGram__ctor" data-uid="F23.StringSimilarity.QGram.#ctor">
   QGram()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Q-gram similarity and distance. Defined by Ukkonen in &quot;Approximate
@@ -203,7 +209,7 @@ Default k is 3.</p>
 
   <h3 id="F23_StringSimilarity_QGram__ctor_System_Int32_" data-uid="F23.StringSimilarity.QGram.#ctor(System.Int32)">
   QGram(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Q-gram similarity and distance. Defined by Ukkonen in &quot;Approximate
@@ -245,7 +251,7 @@ O(|A| + |B|), where Levenshtein requires O(|A|.|B|)</p>
 
   <h3 id="F23_StringSimilarity_QGram_Distance_System_Collections_Generic_IDictionary_System_String_System_Int32__System_Collections_Generic_IDictionary_System_String_System_Int32__" data-uid="F23.StringSimilarity.QGram.Distance(System.Collections.Generic.IDictionary{System.String,System.Int32},System.Collections.Generic.IDictionary{System.String,System.Int32})">
   Distance(IDictionary&lt;string, int&gt;, IDictionary&lt;string, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compute QGram distance using precomputed profiles.</p>
@@ -284,7 +290,7 @@ O(|A| + |B|), where Levenshtein requires O(|A|.|B|)</p>
 
   <h3 id="F23_StringSimilarity_QGram_Distance_System_String_System_String_" data-uid="F23.StringSimilarity.QGram.Distance(System.String,System.String)">
   Distance(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The distance between two strings is defined as the L1 norm of the
@@ -333,7 +339,7 @@ difference of their profiles (the number of occurence of each k-shingle).</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L37" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET/blob/chore/49-generate-docfx-doc-site/src/F23.StringSimilarity/QGram.cs/#L38" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -23,10 +23,12 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: ShingleBased
     path: src/F23.StringSimilarity/ShingleBased.cs
-    startLine: 30
+    startLine: 33
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: Base class for shingle based algorithms.
+  example: []
   syntax:
     content: public abstract class ShingleBased
     content.vb: Public MustInherit Class ShingleBased
@@ -63,7 +65,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: k
     path: src/F23.StringSimilarity/ShingleBased.cs
-    startLine: 37
+    startLine: 40
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -94,7 +96,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/ShingleBased.cs
-    startLine: 48
+    startLine: 51
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -133,10 +135,12 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/ShingleBased.cs
-    startLine: 58
+    startLine: 64
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: Initializes a new instance of the <xref href="F23.StringSimilarity.ShingleBased" data-throw-if-not-resolved="false"></xref> class with the default shingle size.
+  example: []
   syntax:
     content: protected ShingleBased()
     content.vb: Protected Sub New()
@@ -162,17 +166,30 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: GetProfile
     path: src/F23.StringSimilarity/ShingleBased.cs
-    startLine: 60
+    startLine: 76
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: >-
+    Generates a profile of k-length substrings (shingles) from the specified string, along with their frequency
+
+    of occurrence.
+  remarks: >-
+    This method processes the input string by normalizing spaces and then extracting
+        overlapping substrings of length k. The resulting dictionary provides a frequency count for each unique
+        shingle.
+  example: []
   syntax:
     content: public Dictionary<string, int> GetProfile(string s)
     parameters:
     - id: s
       type: System.String
+      description: The input string from which to generate the shingle profile. Cannot be null.
     return:
       type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+      description: >-
+        A dictionary where the keys are k-length substrings (shingles) extracted from the input string, and the
+            values are the number of times each shingle appears.
     content.vb: Public Function GetProfile(s As String) As Dictionary(Of String, Integer)
   overload: F23.StringSimilarity.ShingleBased.GetProfile*
   nameWithType.vb: ShingleBased.GetProfile(String)
@@ -471,6 +488,13 @@ references:
   nameWithType.vb: ShingleBased.New
   fullName.vb: F23.StringSimilarity.ShingleBased.New
   name.vb: New
+- uid: F23.StringSimilarity.ShingleBased
+  commentId: T:F23.StringSimilarity.ShingleBased
+  parent: F23.StringSimilarity
+  href: F23.StringSimilarity.ShingleBased.html
+  name: ShingleBased
+  nameWithType: ShingleBased
+  fullName: F23.StringSimilarity.ShingleBased
 - uid: F23.StringSimilarity.ShingleBased.GetProfile*
   commentId: Overload:F23.StringSimilarity.ShingleBased.GetProfile
   href: F23.StringSimilarity.ShingleBased.html#F23_StringSimilarity_ShingleBased_GetProfile_System_String_

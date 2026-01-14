@@ -118,26 +118,37 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/MetricLCS.cs
-    startLine: 46
+    startLine: 60
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
-  summary: Compute and return the metric distance.
+  summary: Calculates the normalized distance between two sequences based on their longest common subsequence.
+  remarks: >-
+    The distance is calculated as: <pre><code class="lang-csharp">1.0 - (Length of Longest Common Subsequence /
+                                                   Maximum Length of the Two Sequences)</code></pre> This method is case-sensitive for sequences of strings or
+        characters.
   example: []
   syntax:
     content: 'public double Distance<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2) where T : IEquatable<T>'
     parameters:
     - id: s1
       type: System.ReadOnlySpan{{T}}
+      description: The first sequence to compare. Cannot be null.
     - id: s2
       type: System.ReadOnlySpan{{T}}
+      description: The second sequence to compare. Cannot be null.
     typeParameters:
     - id: T
+      description: The type of elements in the sequences. Must implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Double
-      description: The metric distance.
+      description: 'A value between 0.0 and 1.0 representing the normalized distance between the two sequences: <ul><li>Returns 0.0 if the sequences are identical.</li><li>Returns 1.0 if the sequences have no common elements.</li><li>Returns a value between 0.0 and 1.0 for partial similarity.</li></ul>'
     content.vb: Public Function Distance(Of T As IEquatable(Of T))(s1 As ReadOnlySpan(Of T), s2 As ReadOnlySpan(Of T)) As Double
   overload: F23.StringSimilarity.MetricLCS.Distance*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">s1</code> or <code class="paramref">s2</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   - F23.StringSimilarity.Interfaces.ISpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
@@ -590,6 +601,34 @@ references:
   nameWithType.vb: Double
   fullName.vb: Double
   name.vb: Double
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{{T}},System.ReadOnlySpan{{T}})
   commentId: M:F23.StringSimilarity.Interfaces.IMetricSpanDistance.Distance``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
   parent: F23.StringSimilarity.Interfaces.IMetricSpanDistance

@@ -20,10 +20,21 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: ICharacterSubstitution
     path: src/F23.StringSimilarity/ICharacterSubstitution.cs
-    startLine: 32
+    startLine: 34
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: >-
+    Used to indicate the cost of character substitution.
+
+
+    Cost should always be in [0.0 .. 1.0]
+
+    For example, in an OCR application, cost('o', 'a') could be 0.4
+
+    In a checkspelling application, cost('u', 'i') could be 0.4 because these are
+
+    next to each other on the keyboard...
   example: []
   syntax:
     content: public interface ICharacterSubstitution
@@ -46,7 +57,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Cost
     path: src/F23.StringSimilarity/ICharacterSubstitution.cs
-    startLine: 40
+    startLine: 42
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity

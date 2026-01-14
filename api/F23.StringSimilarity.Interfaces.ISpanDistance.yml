@@ -20,10 +20,12 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: ISpanDistance
     path: src/F23.StringSimilarity/Interfaces/ISpanDistance.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity.Interfaces
+  summary: An interface for distance measures that operate on spans.
+  example: []
   syntax:
     content: public interface ISpanDistance
     content.vb: Public Interface ISpanDistance
@@ -45,7 +47,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/Interfaces/ISpanDistance.cs
-    startLine: 19
+    startLine: 22
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity.Interfaces

@@ -77,10 +77,15 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/NGram.cs
-    startLine: 49
+    startLine: 55
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: Initializes a new instance of the <xref href="F23.StringSimilarity.NGram" data-throw-if-not-resolved="false"></xref> class with the default value for N.
+  remarks: >-
+    This constructor sets the N-gram size to the default value defined by <xref href="F23.StringSimilarity.NGram.DEFAULT_N" data-throw-if-not-resolved="false"></xref>. Use this constructor when you want to create an NGram instance with the default
+        configuration.
+  example: []
   syntax:
     content: public NGram()
     content.vb: Public Sub New()
@@ -106,15 +111,18 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: .ctor
     path: src/F23.StringSimilarity/NGram.cs
-    startLine: 51
+    startLine: 61
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
+  summary: Initializes a new instance of the <xref href="F23.StringSimilarity.NGram" data-throw-if-not-resolved="false"></xref> class with the specified size.
+  example: []
   syntax:
     content: public NGram(int n)
     parameters:
     - id: n
       type: System.Int32
+      description: The size of the n-gram. Must be a positive integer.
     content.vb: Public Sub New(n As Integer)
   overload: F23.StringSimilarity.NGram.#ctor*
   nameWithType.vb: NGram.New(Integer)
@@ -138,7 +146,7 @@ items:
       repo: https://github.com/Jim-Johnson-Programmer/StringSimilarity.NET.git
     id: Distance
     path: src/F23.StringSimilarity/NGram.cs
-    startLine: 63
+    startLine: 73
   assemblies:
   - F23.StringSimilarity
   namespace: F23.StringSimilarity
@@ -471,6 +479,17 @@ references:
   - uid: F23.StringSimilarity.Interfaces
     name: Interfaces
     href: F23.StringSimilarity.Interfaces.html
+- uid: F23.StringSimilarity.NGram
+  commentId: T:F23.StringSimilarity.NGram
+  href: F23.StringSimilarity.NGram.html
+  name: NGram
+  nameWithType: NGram
+  fullName: F23.StringSimilarity.NGram
+- uid: F23.StringSimilarity.NGram.DEFAULT_N
+  commentId: F:F23.StringSimilarity.NGram.DEFAULT_N
+  name: DEFAULT_N
+  nameWithType: NGram.DEFAULT_N
+  fullName: F23.StringSimilarity.NGram.DEFAULT_N
 - uid: F23.StringSimilarity.NGram.#ctor*
   commentId: Overload:F23.StringSimilarity.NGram.#ctor
   href: F23.StringSimilarity.NGram.html#F23_StringSimilarity_NGram__ctor
