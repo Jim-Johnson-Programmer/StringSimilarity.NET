@@ -51,7 +51,7 @@ namespace F23.StringSimilarity
         /// Calculates the normalized distance between two sequences of elements.
         /// </summary>
         /// <remarks>The distance is normalized by the length of the longer sequence. This ensures the
-        /// result is always in the range [0.0, 1.0], where 0.0 indicates identical sequences and 1.0 indicates 
+        /// result is always in the range [0.0, 1.0], where 0.0 indicates identical sequences and 1.0 indicates
         /// maximum dissimilarity.</remarks>
         /// <typeparam name="T">The type of elements in the sequences. Must implement <see cref="IEquatable{T}"/>.</typeparam>
         /// <param name="s1">The first sequence to compare. Cannot be empty or null.</param>
