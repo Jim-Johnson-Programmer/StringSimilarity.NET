@@ -29,7 +29,7 @@ using System.Text.RegularExpressions;
 namespace F23.StringSimilarity
 {
     /// <summary>
-    /// Base class for shingle based algorithms. 
+    /// Base class for shingle based algorithms.
     /// </summary>
     public abstract class ShingleBased
     {
