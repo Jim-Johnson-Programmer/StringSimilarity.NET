@@ -75,21 +75,21 @@ namespace F23.StringSimilarity
         /// <exception cref="ArgumentNullException">If s1 or s2 is null.</exception>
         public double Distance(string s1, string s2, int limit)
             => Distance(s1.AsSpan(), s2.AsSpan(), limit);
-        
+
         /// <summary>
         /// Calculates the distance between two sequences of elements.
         /// </summary>
         /// <remarks>This method uses a default maximum threshold for the distance calculation. For custom
-        /// thresholds, use an overload         that accepts a threshold parameter.</remarks>
+        /// thresholds, use an overload that accepts a threshold parameter.</remarks>
         /// <typeparam name="T">The type of elements in the sequences. Must implement <see cref="IEquatable{T}"/>.</typeparam>
         /// <param name="s1">The first sequence to compare.</param>
         /// <param name="s2">The second sequence to compare.</param>
         /// <returns>A <see cref="double"/> representing the distance between the two sequences. The specific meaning of the
-        /// distance         depends on the implementation of the comparison logic.</returns>
+        /// distance depends on the implementation of the comparison logic.</returns>
         public double Distance<T>(ReadOnlySpan<T> s1, ReadOnlySpan<T> s2)
             where T : IEquatable<T>
             => Distance(s1, s2, int.MaxValue);
-        
+
         /// <summary>
         /// Calculates the edit distance (Levenshtein distance) between two sequences, with an optional upper limit.
         /// </summary>
