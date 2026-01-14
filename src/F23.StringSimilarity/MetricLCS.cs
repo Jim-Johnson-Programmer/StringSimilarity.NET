@@ -43,13 +43,12 @@ namespace F23.StringSimilarity
         /// <exception cref="ArgumentNullException">If s1 or s2 is null.</exception>
         public double Distance(string s1, string s2)
             => Distance(s1.AsSpan(), s2.AsSpan());
-        
+
         /// <summary>
         /// Calculates the normalized distance between two sequences based on their longest common subsequence.
         /// </summary>
         /// <remarks>The distance is calculated as: <code> 1.0 - (Length of Longest Common Subsequence /
-        /// Maximum Length of the Two Sequences) </code> This method is case-sensitive for sequences of strings or
-        /// characters.</remarks>
+        /// Maximum Length of the Two Sequences) </code> This method is case-sensitive for sequences of strings or characters.</remarks>
         /// <typeparam name="T">The type of elements in the sequences. Must implement <see cref="IEquatable{T}"/>.</typeparam>
         /// <param name="s1">The first sequence to compare. Cannot be null.</param>
         /// <param name="s2">The second sequence to compare. Cannot be null.</param>
