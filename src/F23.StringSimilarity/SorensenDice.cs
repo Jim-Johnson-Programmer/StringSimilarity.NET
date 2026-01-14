@@ -29,7 +29,8 @@ using F23.StringSimilarity.Interfaces;
 // ReSharper disable LoopCanBeConvertedToQuery
 
 namespace F23.StringSimilarity
-{   /// <summary>
+{
+    /// <summary>
     /// Similar to Jaccard index, but this time the similarity is computed as 2 * |V1
     /// inter V2| / (|V1| + |V2|). Distance is computed as 1 - cosine similarity.
     /// </summary>
@@ -89,7 +90,7 @@ namespace F23.StringSimilarity
             var union = new HashSet<string>();
             union.UnionWith(profile1.Keys);
             union.UnionWith(profile2.Keys);
-            
+
             int inter = 0;
 
             foreach (var key in union)
