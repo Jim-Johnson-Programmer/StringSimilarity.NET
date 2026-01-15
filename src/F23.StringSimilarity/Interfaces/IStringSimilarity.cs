@@ -25,7 +25,7 @@
 namespace F23.StringSimilarity.Interfaces
 {
     /// <summary>
-    /// Interface for string similarity algorithms
+    /// Interface for string similarity algorithms.
     /// </summary>
     public interface IStringSimilarity
     {
