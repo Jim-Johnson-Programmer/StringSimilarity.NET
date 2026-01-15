@@ -38,6 +38,10 @@ namespace F23.StringSimilarity.Support
         /// <summary>
         /// Creates a new array by padding the source array to the specified final length with the given padding value.
         /// </summary>
+        /// <param name="source">The source array to be padded.</param>
+        /// <param name="finalLength">The desired final length of the array after padding. Must be greater than or equal to the length of <paramref name="source"/>.</param>
+        /// <param name="paddingValue">The value used to pad the array if it is shorter than <paramref name="finalLength"/>.</param>
+        /// <returns>A new array of length <paramref name="finalLength"/> containing the elements of <paramref name="source"/>, followed by padding values if necessary.</returns>
         internal static T[] WithPadding<T>(this T[] source, int finalLength, T paddingValue = default(T))
         {
             if (finalLength < source.Length)
